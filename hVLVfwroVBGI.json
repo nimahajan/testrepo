@@ -1,0 +1,495 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1601907513842,
+  "description": "This is a demo walkthrough document that briefly explains the purpose of this tool and various options to create rich codelabs.",
+  "difficulty": "Beginner",
+  "sharing": { "mode": "Public", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": {
+            "caption": "",
+            "stretched": true,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FXFBTraDteCZn?alt=media&amp;token=ab67fe6e-9369-49a4-942c-b66b09924275",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
+        {
+          "data": {
+            "text": "Thanks for Checking out Walkthrough. This walkthrough will cover below topics"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "Why Walkthrough Documents?",
+              "What does Walkthrough.so offer?",
+              "How much does it cost?"
+            ],
+            "style": "ticked"
+          },
+          "type": "list"
+        },
+        { "data": { "text": "Let's get started !" }, "type": "paragraph" },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "Why Walkthrough Documents?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "There are various kinds of instructional documents named differently as - tutorials, workshops, codelabs, onboarding or migration guides, Getting Started, etc. There are plenty of tools we use for writing those eg. wikis, blogs, markdowns, or MS/Google docs.&nbsp; But these are not so ideal in terms of experience for both readers and writers of such content.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "<b><u class=\"cdx-underline\">Reader's challenges</u></b>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "If the content is long (&gt;2 pages), readers find it difficult to follow the instructions. He/She ends up scrolling the document up-down many times. In most formats, content is broken down by printer page size rather than logical step units.",
+              "Instructional documents tend to be very static and un-interactive. They have limited support or third-party tool integrations. The readers quickly lose interest."
+            ],
+            "style": "unordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "<b><u class=\"cdx-underline\">Writer's challenges</u></b>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "Instructional documents often need special components like - alerts, code snippets, attachments. Such things are not very easy to write with existing tools.",
+              "Sharing such documents across organizations with your customer can be a challenge.",
+              "Longer tutorials have larger drop out rates. That is essentially a waste of the writer's efforts.<br>"
+            ],
+            "style": "unordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "We think documents that are instructional in nature can be written in a format that is far more comprehensible, interactive, and dynamic. So we decided to make <a href=\"https://Walkthrough.so\">Walkthrough.so</a> - a tool for creating and consuming instructional content."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "What does Walkthrough.so&nbsp;offer?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "The focus of <a href=\"https://www.walkthhrough.so\">walkthrough</a>&nbsp;is to simplify the creation of rich codelabs style tutorials and improve the learning experience for readers.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "<b>WYSIWYG Editor and Block Components</b>&nbsp;<br>Using a block style editor, we make it very easy to create interactive blocks of data and allow integrations using plugins. Many components that are often needed in instructional documents like alerts, code boxes, third party widget embeds are already supported. This makes writing extremely easy.<br><br>",
+              "<b>Sharing, Hosting, and SEO</b><br>Walkthrough&nbsp;makes it easy to share and host such tutorials for your target audience.&nbsp;<br><br><u class=\"cdx-underline\">Public Sharing</u> - If you want to write codelabs/tutorials, we allow sharing it publically and turn it into a codelab style blog.&nbsp; Walkthrough takes care of making it SEO and mobile-friendly.<br><br><u class=\"cdx-underline\">Private Sharing</u> - If you want to share such content privately with your customers e.g. onboarding documents, migration guides, etc, Walkthrough allows sharing with an email address or link.&nbsp;"
+            ],
+            "style": "ordered"
+          },
+          "type": "list"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "How much does it cost?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Pricing details are available <a href=\"https://www.walkthrough.so/#pricing\">here</a>."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": {
+            "text": "In the next section, you can learn about what kind of tools&nbsp;<a href=\"https://www.walkthhrough.so/\">walkthrough.so</a>&nbsp;provide for writing beautiful documents."
+          },
+          "type": "paragraph"
+        }
+      ],
+      "esTimeInMin": 4,
+      "time": 1608287640538,
+      "uid": "VmJxhaBWtLVu"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Building Blocks of a Walkthrough" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "When you create a new one, you have a WYSIWYG style editor.&nbsp; We currently support below kind of blocks in your document."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "Content Types&nbsp;" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "After you press tab or click + button, you can see various options&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Editor Options",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FWIYlBNSiPQJh?alt=media&amp;token=273bdd5d-81bf-4a52-bd1e-b35ac50e1178",
+            "withBackground": true,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        {
+          "data": { "level": 3, "text": "1. Text Paragraph Block (Default)" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "This is a default block. It allows writing text paragraphs. If you highlight some part of the paragraph, you can see options for inline editing."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Inline Editor",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FLsgqIiCrkpLA?alt=media&amp;token=f5d23c21-8d56-42c8-8631-9fb230c98cdc",
+            "withBackground": true,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "It allows various options like making text - <b>Bold</b>, <i>Italic</i>, <a href=\"http://www.engdocs.dev\">Hyperlink</a>, <code class=\"inline-code\">Inline-Code</code>, <u class=\"cdx-underline\">Underline</u>, and highlight.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "2. Heading Block" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "This allows writing heading of various sizes. If you select some text or press TAB again, you can see block style options by expanding the right side menu."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Style Options",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FuGrjydLfFDAd?alt=media&amp;token=427b45e7-e3e3-4b7e-9002-6f81bee3ae18",
+            "withBackground": true,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "level": 3, "text": "3. List Block" }, "type": "header" },
+        {
+          "data": { "text": "This allows writing simple lists.&nbsp; " },
+          "type": "paragraph"
+        },
+        { "data": { "text": "Lists are of 3 types." }, "type": "paragraph" },
+        { "data": { "text": "<b>Numbered List</b>" }, "type": "paragraph" },
+        {
+          "data": {
+            "items": [ "Numbered List Item 1", "Numbered List Item 2" ],
+            "style": "ordered"
+          },
+          "type": "list"
+        },
+        { "data": { "text": "<b>Unordered List:</b>" }, "type": "paragraph" },
+        {
+          "data": {
+            "items": [
+              "Unordered List Item<br>",
+              "Unordered List Item<br>",
+              "Unordered List Item<br>"
+            ],
+            "style": "unordered"
+          },
+          "type": "list"
+        },
+        { "data": { "text": "<b>Checked List</b>" }, "type": "paragraph" },
+        {
+          "data": { "items": [ "Item 1", "Item 2", "Item 3" ], "style": "ticked" },
+          "type": "list"
+        },
+        {
+          "data": { "level": 3, "text": "4. Delimiter Block&nbsp;" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "There are 2 types of delimiters." },
+          "type": "paragraph"
+        },
+        { "data": { "text": "<b>1. Straight Line</b>" }, "type": "paragraph" },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "text": "<b>2. Asterisk&nbsp;</b>" },
+          "type": "paragraph"
+        },
+        { "data": { "style": "mark" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "5. Code Block&nbsp;" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "An Example code block with syntax support look like below -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "var foo := 10\nfoo = foo * 10;", "language": "go" },
+          "type": "code"
+        },
+        {
+          "data": { "level": 3, "text": "6. Button Block" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Button block allows you to insert buttons with defined URL action -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "Simple Button",
+            "type": "primary",
+            "url": "https://www.engdocs.dev"
+          },
+          "type": "button"
+        },
+        { "data": { "level": 3, "text": "7. Alert Block" }, "type": "header" },
+        {
+          "data": {
+            "text": "Alert blocks allow writing content to grab the reader's attention to something important."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "<b>Note:</b><div><span style=\"font-size: 0.875rem;\">This is a primary block.</span><br></div>",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "message": "<b>Note:</b><br>This is a secondary block.",
+            "type": "secondary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "message": "<b>Note:</b><br>This is a success block.",
+            "type": "success"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "message": "<b>Note:</b><br>This is a warning block.",
+            "type": "warning"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "message": "<b>Note:</b><br>This is a danger block.",
+            "type": "danger"
+          },
+          "type": "alert"
+        },
+        { "data": { "level": 3, "text": "8. Image Block" }, "type": "header" },
+        {
+          "data": {
+            "text": "Image Block allows adding images either by copy/paste or by pasting URLs or pulling from Giphy or Unsplash."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Caption: Wow meme.",
+            "giphy": { "author": "thismightget", "profileLink": "" },
+            "stretched": false,
+            "url": "https://media4.giphy.com/media/5BYvjhtjsQdoyx9JT9/giphy.gif?cid=576d9d689npex2xqbcr5b4ejoztw858573slbi331ia15rjg&amp;rid=giphy.gif",
+            "withBackground": true,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "level": 3, "text": "9. Video Block" }, "type": "header" },
+        {
+          "data": { "text": "Just Paste URL from Youtube to embed your video -" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Get Inspired !&nbsp;",
+            "height": 320,
+            "service": "youtube",
+            "source": "https://www.youtube.com/watch?v=UF8uR6Z6KLc",
+            "width": 580
+          },
+          "type": "embed"
+        },
+        { "data": { "level": 3, "text": "10. Link Block" }, "type": "header" },
+        {
+          "data": {
+            "text": "Allows you to render a link like a block with title and description."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://github.com/golang/go",
+            "meta": {
+              "description": "The Go programming language. Contribute to golang/go development by creating an account on GitHub.",
+              "image": {
+                "url": "https://avatars3.githubusercontent.com/u/4314092?s=400&amp;v=4"
+              },
+              "title": "golang/go"
+            }
+          },
+          "type": "linkTool"
+        },
+        {
+          "data": { "level": 3, "text": "11. Embed&nbsp;" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "You can embed content from various services. e.g. Github, Youtube, etc."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/GoesToEleven/GolangTraining/blob/master/01_getting-started/01_helloWorld/main.go",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": { "level": 3, "text": "11. Questions/Quiz&nbsp;" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "You can add questions to make learning more fun and interactive."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "correctAnswer": "Encrypted",
+            "hint": "Security is very important for passwords.",
+            "options": [ "Plaintext", "Base64 Encoded", "Encrypted" ],
+            "question": "How would you store your passwords?",
+            "type": "MCQ"
+          },
+          "type": "question"
+        },
+        {
+          "data": {
+            "correctAnswer": "911",
+            "hint": "",
+            "options": [],
+            "question": "What number do you dial when you have an emergency?",
+            "type": "SAQ"
+          },
+          "type": "question"
+        },
+        {
+          "data": { "level": 3, "text": "11. Attachments" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "Now you can attach files into walkthroughs" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "file": {
+              "extension": "pdf",
+              "name": "View W-4.pdf",
+              "size": 181813,
+              "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FuTlSkUGXSlTs?alt=media&amp;token=67ce0c87-85db-4b66-b8b6-f72d30278303"
+            },
+            "title": "Sample.pdf"
+          },
+          "type": "AttachesTool"
+        }
+      ],
+      "esTimeInMin": 4,
+      "time": 1608287662812,
+      "uid": "XcqVxtDUDTlJ"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Conclusion" }, "type": "header" },
+        {
+          "data": {
+            "text": "After you create your awesome walkthrough, you can click <b>Configure &amp; Publish</b>. Here you can add extra information like description, difficulty level, and tags.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Once published, your article will be visible to your audience."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Publishing",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FKfNIRAkSumZU?alt=media&amp;token=bd9e13d5-7a7a-4c36-9639-d4cd07761635",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        }
+      ],
+      "esTimeInMin": 2,
+      "time": 1608287657890,
+      "uid": "QOPIeXUCEizj"
+    }
+  ],
+  "tags": [ "walkthrough", "demo" ],
+  "title": "A Walkthrough of walkthrough.so",
+  "uid": "hVLVfwroVBGI",
+  "updatedAt": 1608287670638
+}
