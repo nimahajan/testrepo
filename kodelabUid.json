@@ -1,5 +1,5 @@
 {
-  "backupSha": null,
+  "backupSha": "0695f1c737d0afd0b8b32cccc81651254a4abdc0",
   "userBackupSha": null,
   "description": "description",
   "title": "title",
@@ -8,15 +8,15 @@
     {
       "blocks": [ { "data": { "level": 2, "text": "Header" }, "type": "header" } ],
       "uid": "1",
-      "time": 1608286487922
+      "time": 1608286661929
     }
   ],
   "tags": [ "test1", "test2" ],
   "difficulty": "Advanced",
   "uid": "kodelabUid",
-  "createdAt": 1608286487922,
+  "createdAt": 1608286661929,
   "authorUid": "mockUserUid",
   "prerenderedHtmlUrl": null,
-  "updatedAt": 1608286487922,
+  "updatedAt": 1608286661929,
   "status": "Published"
 }
