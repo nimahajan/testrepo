@@ -1,0 +1,22 @@
+{
+  "backupSha": null,
+  "userBackupSha": null,
+  "description": "description",
+  "title": "title",
+  "sharing": { "users": null, "mode": "Public" },
+  "steps": [
+    {
+      "blocks": [ { "data": { "level": 2, "text": "Header" }, "type": "header" } ],
+      "uid": "1",
+      "time": 1608286487922
+    }
+  ],
+  "tags": [ "test1", "test2" ],
+  "difficulty": "Advanced",
+  "uid": "kodelabUid",
+  "createdAt": 1608286487922,
+  "authorUid": "mockUserUid",
+  "prerenderedHtmlUrl": null,
+  "updatedAt": 1608286487922,
+  "status": "Published"
+}
