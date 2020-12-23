@@ -1,0 +1,161 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1605758239179,
+  "description": "",
+  "difficulty": "Beginner",
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "<b>Running on AWS with custom setup</b>" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "This guide provides a quick start for running Pinot on Amazon Web Services (AWS)."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": {
+            "text": "This document provides the basic instruction to set up a Kubernetes Cluster on <a href=\"https://aws.amazon.com/eks/\" target=\"_blank\">Amazon Elastic Kubernetes Service (Amazon EKS)</a>"
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "<b>1. Tooling Installation</b>" },
+          "type": "header"
+        },
+        {
+          "data": { "level": 4, "text": "<b>1.1 Install Kubectl</b>" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Please follow this link (<a href=\"https://kubernetes.io/docs/tasks/tools/install-kubectl\" target=\"_blank\">https://kubernetes.io/docs/tasks/tools/install-kubectl</a>) to install kubectl."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "<u class=\"cdx-underline\"><b>For Mac Users</b></u>" },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "brew install kubernetes-cli", "language": "none" },
+          "type": "code"
+        },
+        {
+          "data": { "text": "Please check kubectl version after installation." },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "kubectl version", "language": "none" },
+          "type": "code"
+        },
+        {
+          "data": {
+            "message": "<a href=\"http://www.google.com\" style=\"\">QuickStart</a><div style=\"\"><br style=\"\"></div><div style=\"\">Scripts are tested under kubectl client version v1.16.3 and server version v1.13.12</div>",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "message": "asdadas<div style=\"\">ads</div><div style=\"\">ad</div><div style=\"\">as</div><div style=\"\">das</div><div style=\"\">d</div><div style=\"\">asd</div><div style=\"\"><br style=\"\"></div>",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "link": "https://react-icons.github.io/react-icons/search?q=open",
+            "meta": {
+              "description": "Include popular icons in your React projects easly with react-icons.",
+              "image": { "url": null },
+              "title": "React Icons"
+            }
+          },
+          "type": "linkTool"
+        },
+        {
+          "data": {
+            "link": "https://developer.android.com/codelabs/basic-android-kotlin-training-activities-intents#5",
+            "meta": {
+              "description": "Update an unfinished app to use navigation with implicit and explicit intents.",
+              "image": {
+                "url": "https://developer.android.com/images/social/android-developers.png"
+              },
+              "title": "Activities and Intents | Android Developers"
+            }
+          },
+          "type": "linkTool"
+        },
+        {
+          "data": {
+            "file": {
+              "extension": "mp4",
+              "name": "Try1.mp4",
+              "size": 1509127,
+              "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FYXeTRhwKDEaB?alt=media&amp;token=1461e29b-af28-4b59-a768-24cadf873dcc"
+            },
+            "title": "Try1.mp4"
+          },
+          "type": "AttachesTool"
+        }
+      ],
+      "time": 1608716548457,
+      "uid": "GgisclSaWdhW"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Untitled" }, "type": "header" },
+        { "data": { "text": "Start writing..." }, "type": "paragraph" },
+        { "data": { "text": "asdada" }, "type": "paragraph" },
+        {
+          "data": {
+            "correctAnswer": "a",
+            "hint": "",
+            "options": [ "a", "b" ],
+            "question": "Who wrote Geeta?",
+            "type": "MCQ"
+          },
+          "type": "question"
+        },
+        {
+          "data": {
+            "message": "asad<div data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\" style=\"pointer-events: none;\"><br data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\" style=\"pointer-events: none;\"></div><div data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\" style=\"pointer-events: none;\"><br data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\" style=\"pointer-events: none;\"></div>",
+            "type": "secondary"
+          },
+          "type": "alert"
+        }
+      ],
+      "time": 1608290742305,
+      "uid": "bsMMaLVifywh"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/golang/go/blob/master/src/compress/zlib/writer.go",
+            "width": 640
+          },
+          "type": "embed"
+        }
+      ],
+      "time": 1608290744686,
+      "uid": "rADPdXPUxOlO"
+    }
+  ],
+  "tags": [],
+  "title": "My Private Walkthrough",
+  "uid": "sJxmFolBUBjP",
+  "updatedAt": 1608716555505
+}
