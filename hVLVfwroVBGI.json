@@ -160,7 +160,7 @@
           "type": "image"
         }
       ],
-      "time": 1608878076463,
+      "time": 1608882610801,
       "uid": "RIwdxJzrXjYQ"
     },
     {
@@ -267,7 +267,7 @@
           "type": "paragraph"
         }
       ],
-      "time": 1608878084695,
+      "time": 1608882606191,
       "uid": "gsKTHwsJGtdG"
     },
     {
@@ -393,7 +393,7 @@
           "type": "image"
         }
       ],
-      "time": 1608878087063,
+      "time": 1608882602459,
       "uid": "KkDtxNxLwGrl"
     },
     {
@@ -588,11 +588,11 @@
     {
       "blocks": [
         {
-          "data": { "level": 2, "text": "Validate Learning" },
+          "data": { "level": 2, "text": "Validating Learning" },
           "type": "header"
         },
         {
-          "data": { "text": "What is learning without a quiz :)&nbsp;" },
+          "data": { "text": "What is learning without a quiz 😄" },
           "type": "paragraph"
         },
         {
@@ -646,7 +646,7 @@
           "type": "header"
         }
       ],
-      "time": 1608877854333,
+      "time": 1608882596657,
       "uid": "jHQGeGvrqUYh"
     },
     {
@@ -657,15 +657,16 @@
             "text": "After you create your awesome walkthrough, you can click <b>Configure &amp; Publish</b>.&nbsp;Once published, your article will be visible to your audience."
           },
           "type": "paragraph"
-        }
+        },
+        { "data": { "style": "mark" }, "type": "delimiter" }
       ],
       "esTimeInMin": 2,
-      "time": 1608878144435,
+      "time": 1608882576902,
       "uid": "QOPIeXUCEizj"
     }
   ],
   "tags": [ "walkthrough", "demo" ],
   "title": "A Walkthrough of walkthrough.so",
   "uid": "hVLVfwroVBGI",
-  "updatedAt": 1608878194616
+  "updatedAt": 1608882732150
 }
