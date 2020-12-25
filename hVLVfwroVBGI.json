@@ -1,7 +1,7 @@
 {
   "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
   "createdAt": 1601907513842,
-  "description": "This is a demo walkthrough document that briefly explains the purpose of this tool and various options to create rich codelabs.",
+  "description": "A walkthrough of the walkthrough.so ",
   "difficulty": "Beginner",
   "sharing": { "mode": "Public", "users": [] },
   "status": "Published",
@@ -667,5 +667,5 @@
   "tags": [ "walkthrough", "demo" ],
   "title": "A Walkthrough of walkthrough.so",
   "uid": "hVLVfwroVBGI",
-  "updatedAt": 1608878187124
+  "updatedAt": 1608878189183
 }
