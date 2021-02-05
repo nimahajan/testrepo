@@ -8,16 +8,6 @@
   "steps": [
     {
       "blocks": [
-        {
-          "data": {
-            "caption": ".",
-            "stretched": true,
-            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FqMYvlHoiVqAu?alt=media&amp;token=50ed9fd2-0f8c-40f3-a174-4cc703f65623",
-            "withBackground": false,
-            "withBorder": false
-          },
-          "type": "image"
-        },
         { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
         {
           "data": {
@@ -119,7 +109,7 @@
         { "data": { "text": "Let's get Started !" }, "type": "paragraph" }
       ],
       "esTimeInMin": 3,
-      "time": 1608097121106,
+      "time": 1612512574862,
       "uid": "HHyaDDKiqxin"
     },
     {
@@ -871,5 +861,5 @@
   "tags": [ "GCP", "Kubernetes", "Docker", "React", "NextJS" ],
   "title": "How to deploy NextJS app to Kubernetes Cluster in GCP with Custom Domain?",
   "uid": "FHQPWEGGWSPT",
-  "updatedAt": 1612512549586
+  "updatedAt": 1612512582598
 }
