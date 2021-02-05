@@ -1,0 +1,875 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1602585303565,
+  "description": "This codelab teaches you how to containerize your web application and then host it on a GCP Kubernetes cluster with a custom domain name.",
+  "difficulty": "Advanced",
+  "sharing": { "mode": "Public", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": {
+            "caption": ".",
+            "stretched": true,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FqMYvlHoiVqAu?alt=media&amp;token=50ed9fd2-0f8c-40f3-a174-4cc703f65623",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
+        {
+          "data": {
+            "text": "<a href=\"https://nextjs.org/\">NextJS</a> is a popular framework to write react web applications. It has amazing features like Static Site Generation (SSG) and Server Side Rendering to make your web applications extremely fast and gives a boost to your SEO.&nbsp; It comes correctly configured with all the bells and whistles needed to make your react application production-ready.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "But deploying an app to cloud environment requires quite a lot of configuration and learning new things. This tutorial guides you on how you can deploy NextJS application to a <a href=\"https://kubernetes.io/\">Kubernetes</a> Cluster on <a href=\"https://cloud.google.com/\">Google Cloud Platform</a> and then point your custom domain name to it."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "level": 3, "text": "Prerequisites" }, "type": "header" },
+        {
+          "data": {
+            "items": [
+              "<b>Domain Name</b>&nbsp;<br>In the last stage, we will pointing your custom domain name to your NextJS application hosted on Google Cloud Platform.&nbsp; You can buy domain names from various sites like <a href=\"http://www.namecheap.com\">NameCheap</a>, Or <a href=\"https://domains.google/\">Domain.Google</a>.&nbsp;<br>",
+              "<b>Google Cloud Account</b><br>You also need to have account created on <a href=\"https://console.cloud.google.com/\">Google Cloud Console</a> with billing account setup. If you don't have one, you can create <a href=\"https://cloud.google.com/?\">here</a>.&nbsp;<br><br>"
+            ],
+            "style": "ticked"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "message": "<b>Running on Google Cloud may incur charges</b>.&nbsp;<br><span style=\"font-size: 1rem;\"><br>Please make sure you follow instructions in last step to clean up your cluster after you are done.</span>",
+            "type": "danger"
+          },
+          "type": "alert"
+        },
+        { "data": { "level": 4, "text": "Setup" }, "type": "header" },
+        {
+          "data": {
+            "text": "Before we begin, we need below dependencies installed on your machine -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "<a href=\"https://nodejs.org/en/\">NodeJS</a> 10.13Or Above",
+              "<a href=\"https://cloud.google.com/sdk/docs/quickstart\">gcloud</a> Utilities",
+              "<a href=\"https://docs.docker.com/docker-for-windows/install/\">Docker</a>",
+              "<a href=\"http://Kubectl\">Kubectl</a>"
+            ],
+            "style": "ordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "To confirm if your environment setup is correct, you can run simple version commands on your terminal as shown below"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ npm version\n// ... some version information \n\n$ gcloud version\n// ... some version information \n\n$ docker version\n// ... some version information \n\n$ kubectl version\n// ... some version information ",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "If any of the dependencies are missing, please use the links given to setup your environment properly."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "Expected Output" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "At the end of this codelab, you would be able to get your web application hosted on your custom domain name and served by a kubernetes cluster hosted in GCP"
+          },
+          "type": "paragraph"
+        },
+        { "data": { "level": 3, "text": "Source Code" }, "type": "header" },
+        {
+          "data": { "text": "The entire source code is available here&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://github.com/nimahajan/codelab-nextjs-blog",
+            "meta": {
+              "description": "Contribute to nimahajan/codelab-nextjs-blog development by creating an account on GitHub.",
+              "image": {
+                "url": "https://avatars1.githubusercontent.com/u/2060769?s=400&amp;v=4"
+              },
+              "title": "nimahajan/codelab-nextjs-blog"
+            }
+          },
+          "type": "linkTool"
+        },
+        { "data": { "text": "Let's get Started !" }, "type": "paragraph" }
+      ],
+      "esTimeInMin": 3,
+      "time": 1608097121106,
+      "uid": "HHyaDDKiqxin"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Create Simple NextJS Application" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "Let's create a simple NextJS application.&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "<div style=\"\"><b style=\"\">Note&nbsp;</b></div><div style=\"\"><br style=\"\"></div>If you are familiar with NextJS and already have a functional application, you can skip this step.",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": { "level": 4, "text": "a. New NextJS Application" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "To create your first NextJS application,&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ npx create-next-app nextjs-blog --use-npm --example \\ \n\"https://github.com/vercel/next-learn-starter/tree/master/learn-starter\"",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "This first instruction will take a few seconds to finish.&nbsp; It downloads an existing demo example from NextJS Github directory into&nbsp;<code class=\"inline-code\">nextjs-blog</code> directory.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "$ cd nextjs-blog", "language": "none" },
+          "type": "code"
+        },
+        {
+          "data": { "level": 4, "text": "b. Verify Your Application" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "To verify if everything is working correctly, run <code class=\"inline-code\">npm run dev</code> and you can see the message like below -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ npm run dev\n\n> nextjs-blog@0.1.0 dev /Users/nilesh/work/codelabs/helloworld/nextjs-blog\n> next dev\n\nready - started server on http://localhost:3000\nevent - compiled successfully\nevent - build page: /next/dist/pages/_error\nwait  - compiling...\nevent - compiled successfully\nevent - build page: /\nwait  - compiling...\nevent - compiled successfully",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "If you visit,&nbsp;<a href=\"http://localhost:3000\">http://localhost:3000</a>, you can see a demo page like below -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Screenshot of our demo application page",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FrjJUwAbAAhPv?alt=media&amp;token=81b6aa08-ab40-473e-9308-676483663e82",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        }
+      ],
+      "esTimeInMin": 4,
+      "time": 1608097124321,
+      "uid": "WBDnyKcaYaWz"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Configure Google Cloud Project" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Now, we need to create project in Google Cloud and set the zone to run our cluster into."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "1. Create a project in Cloud Console" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "Google Cloud Console",
+            "type": "primary",
+            "url": "https://console.cloud.google.com/projectcreate"
+          },
+          "type": "button"
+        },
+        {
+          "data": {
+            "text": "2.&nbsp;Enter a name for your Cloud project -&nbsp; <b>nextjs-blog</b>&nbsp;and click&nbsp;Create."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "<b>Important</b><div><br>Remember the project ID, shown under the Project name field. The project ID is important because it is used to identify your project to the Google Cloud tools</div>",
+            "type": "warning"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "text": "You will need this project ID many times. So you can set this project name as variable in terminal so that you don't make mistakes in next instructions."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ export GC_PROJECT_ID=nextjs-blog-292411\n$ gcloud config set project ${GC_PROJECT_ID}",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "3. Lastly, we need to set the zone to run the cluster into. List of available Google Compute Engine zones is <a href=\"https://cloud.google.com/compute/docs/zones#available\">here</a>.&nbsp;Here, I have chosen <b>us-central1-a. </b>But you should generally choose one that is closest to where your most customers will be."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ gcloud config set compute/zone us-central1-a",
+            "language": "none"
+          },
+          "type": "code"
+        }
+      ],
+      "esTimeInMin": 4,
+      "time": 1608097129596,
+      "uid": "awfCERWrizHX"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Build A Docker Image" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Now comes the important part to make your react application cloud ready. To be able to deploy your application on Kubernetes cluster, you need a Dockerfile for your application."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "So first, we will create a filed named&nbsp;<code class=\"inline-code\">Dockerfile</code> in the root directory of your application and add the below contents to it -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Dockerfile",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/nimahajan/codelab-nextjs-blog/blob/main/Dockerfile",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "Each command in the <code class=\"inline-code\">Dockerfile</code> helps extend the image generated in previous stage. We start with a basic image&nbsp;<code class=\"inline-code\">FROM node:12</code> and then run our commands that copy our code into the image, install dependencies and then build the main application.&nbsp;&nbsp;The last step exposes the port 3000 that our web application is using."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Now, lets start building our image with a Tag Name in below structure -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ docker build -t gcr.io/${GC_PROJECT_ID}/nextjs-blog:v1 .",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "&nbsp;⏳ may take a few minutes as it downloads and build entire image.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        { "data": { "level": 4, "text": "Verification" }, "type": "header" },
+        {
+          "data": {
+            "text": "To verify if the image and application in it is setup correctly, start the docker container"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ docker run --rm -d -p 3000:3000 gcr.io/${GC_PROJECT_ID}/nextjs-blog:v1",
+            "language": "makefile"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "This should start your server and you can verify if your page is again visible on&nbsp;<a href=\"http://localhost:3000\">http://localhost:3000</a>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "If everything looks good, you can stop this docker container using -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ docker ps \n\n$ docker kill <container_id>",
+            "language": "bash"
+          },
+          "type": "code"
+        }
+      ],
+      "esTimeInMin": 7,
+      "time": 1607351984521,
+      "uid": "NugXVpftGnGK"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Publish Docker Image on GCP" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "The docker image that we created in previous steps now should be pushed to Google Cloud Registry.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "But before we do that, we need to enable&nbsp;<b>Google Container Registry API</b> on Google Cloud Console.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "Google Cloud Console",
+            "type": "primary",
+            "url": "https://console.cloud.google.com/projectcreate"
+          },
+          "type": "button"
+        },
+        {
+          "data": {
+            "text": "Now, we are ready to push this image to Google Container Registry."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "  $ docker push gcr.io/${GC_PROJECT_ID}/nextjs-blog:v1  ",
+            "language": "bash"
+          },
+          "type": "code"
+        }
+      ],
+      "time": 1607678893348,
+      "uid": "BHavltmXlQje"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Create a Kubernetes Cluster" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Kubernetes is a portable, extensible, open-source platform for managing containerized applications and services. It makes it easy to create a cluster of multiple nodes and then manage their lifecycle.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Before you create one, you need to enable the Kubernetes Engine API for your project in Google Cloud. You can do that from the console."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "Go To Console",
+            "type": "primary",
+            "url": "https://console.cloud.google.com/apis/library/container.googleapis.com?"
+          },
+          "type": "button"
+        },
+        {
+          "data": {
+            "text": "Then choose correct project and click <b>Enable </b>as shown below -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Screenshot of Google Console",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FHKsvPpbDoMYc?alt=media&amp;token=a752febf-50f9-4f72-9b57-a8c5b62201fa",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "Now, lets create a container cluster named <code class=\"inline-code\">nextjs-blog-test</code> to deploy your web application:"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ gcloud container clusters create nextjs-blog-test",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        { "data": { "level": 4, "text": "Verification" }, "type": "header" },
+        {
+          "data": {
+            "text": "Above command creates a 3 node cluster in a pool named <b>default-pool</b>. You can get information about this cluster using&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "$ kubectl get nodes", "language": "bash" },
+          "type": "code"
+        },
+        {
+          "data": { "text": "The output looks something like this. -" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Example output of above command",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FWuIsOqOpNkjT?alt=media&amp;token=1569afa4-2c84-4d75-b633-c0bb9a558cd6",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        }
+      ],
+      "time": 1608097143352,
+      "uid": "WTDqfBjLAqmu"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Deploy the Docker to K8s Cluster" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Once we have an operational cluster, we now need to deploy the docker image we created in earlier steps to our kubernetes cluster.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 4, "text": "a. Create a deployment" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Create a file named <code class=\"inline-code\">nextjs-blog-deployment.yaml</code> on the root directory of our code and add the below content to it like below."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/nimahajan/codelab-nextjs-blog/blob/main/nextjs-blog-deployment.yaml",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "Note the Container Port 3000 on the last line.&nbsp;Now run the below command to make Kubernetes deploy your image to your cluster"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ kubectl apply -f nextjs-blog-deployment.yaml",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "level": 4, "text": "b. Verification" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "You can get the details of your deployment and see them using below command -&nbsp;&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": " $ kubectl get deploy nextjs-blog\n \nNAME          READY   UP-TO-DATE   AVAILABLE   AGE\nnextjs-blog   1/1     1            1           59m\n",
+            "language": "bash"
+          },
+          "type": "code"
+        }
+      ],
+      "esTimeInMin": 3,
+      "time": 1607678897860,
+      "uid": "KQPBGnNiyQmh"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Creating a Load Balancer" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "There are 2 options to setup load balancer in front of your cluster nodes."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "Use a Service, which creates a&nbsp;<a href=\"https://cloud.google.com/compute/docs/load-balancing/network\">TCP Network Load Balancer</a>&nbsp;that works with regional IP addresses.",
+              "Use an Ingress, which creates an&nbsp;<a href=\"https://cloud.google.com/compute/docs/load-balancing/http\">HTTP(S) Load Balancer</a>&nbsp;and supports global IP addresses."
+            ],
+            "style": "ordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "But if we are exposing an HTTP(S) service hosted on GKE,&nbsp;<a href=\"https://cloud.google.com/compute/docs/load-balancing/http\">HTTP(S) load balancing</a>&nbsp;is the recommended method for load balancing. So we will choose <b>option #2</b>."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Since we wish to expose our service using our custom domain name, we need to reserve a static IP address. So let's create one.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 4, "text": "a. Creating a Static IP Address" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "To create a global static IP Address -&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ gcloud compute addresses create nextjs-blog-ip --global",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "To get the details of reserved IP address -&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ gcloud compute addresses describe nextjs-blog-ip --global",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        { "data": { "text": "The Output looks like" }, "type": "paragraph" },
+        {
+          "data": { "code": "address: 35.244.204.182\n...", "language": "none" },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "The static IP Address shown here will be used to later when pointing domain name to your cluster.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 4, "text": "b. Creating Service - Ingress and Backend" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "Now we need to create 2 services in kubernetes. " },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "To create services, first create a <code class=\"inline-code\">next-blog-service.yaml</code> with below content&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/nimahajan/codelab-nextjs-blog/blob/main/nextjs-blog-service.yaml",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "It creates 2 services with configurations separated by ---."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Services are sets of Pods with a network endpoint that can be used for discovery and load balancing. Ingresses are collections of rules for routing external HTTP(S) traffic to Services."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "Now to apply this configurations&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ kubectl apply -f nextjs-blog-service.yaml",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "message": "⏳ This step takes up to 10 mins.&nbsp;",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": { "level": 4, "text": "c. Verification" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "You can check status using&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "$ kubectl get ingress", "language": "none" },
+          "type": "code"
+        },
+        {
+          "data": { "text": "<b>Expected Output :</b>" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "NAME          HOSTS   ADDRESS            PORTS   AGE\nnextjs-blog   *       <YOUR_GLOBAL_IP>   80      27m",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "Where <b>&lt;YOUR_GLOBAL_IP&gt;</b> will be the external global static IP that we created above in part a."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Or you can visit the&nbsp;<a href=\"https://console.cloud.google.com/kubernetes/discovery?\">console</a>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "No Caption",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FGERathLJjBYB?alt=media&amp;token=0eefc619-7386-4a49-a2e6-ffc34764ce59",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "You check if your site is properly up by visiting http://&lt;YOUR_GLOBAL_IP&gt;"
+          },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1608097148282,
+      "uid": "iGeokmUItnXC"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Changing your DNS Settings" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "The global static IP address -&nbsp;<b>&lt;YOUR_GLOBAL_IP&gt;</b>&nbsp;that you created in previous state can now be used to change your DNS settings."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "In our case, our domain is managed through <a href=\"https://domains.google.com/\">domains.google.com</a>.&nbsp;The record values should be like below -&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Example DNS record configured in&nbsp;https://domains.google.com/",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FRqeYDRKJuOom?alt=media&amp;token=75a77e0f-49ce-4e6c-a2fb-4cb4fd8171f4",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "It takes upto few minutes to few hours for the DNS changes to propagate, depending upon your domain name manager.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        { "data": { "level": 3, "text": "Verification" }, "type": "header" },
+        {
+          "data": {
+            "text": "You can go to https://&lt;your_domain_name&gt; to see your application is hosted properly.&nbsp;"
+          },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1608097139414,
+      "uid": "KJptnguasgDj"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Clean Up" }, "type": "header" },
+        {
+          "data": {
+            "message": "If you do not intent to keep the site up, you can follow below instructions to delete the cluster. Otherwise, you can skip to next steps.",
+            "type": "danger"
+          },
+          "type": "alert"
+        },
+        {
+          "data": { "text": "1. Delete Load Balancing Resources" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ kubectl delete ingress,service -l app=nextjs-blog",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "2. Delete the allocation static global IP address" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ gcloud compute addresses delete nextjs-blog-ip --global",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "3. Delete the sample application" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ kubectl delete -f nextjs-blog-deployment.yaml",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "4. Delete Kubernetes Cluster" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ gcloud container clusters delete nextjs-blog-test",
+            "language": "bash"
+          },
+          "type": "code"
+        }
+      ],
+      "time": 1608097145942,
+      "uid": "cLYaQwJufiAl"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Conclusion" }, "type": "header" },
+        {
+          "data": {
+            "text": "Setting up your web application in kubernetes cluster is quite straight forward. "
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "There some extra configurations you can do to your cluster through the Cloud Console to make your cluster scale dynamically so that you can save some money."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Thank You!",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FtVFNOpMOUmbm?alt=media&amp;token=acbc06f6-e5e4-46a9-847d-5ccac67ddddd",
+            "withBackground": true,
+            "withBorder": false
+          },
+          "type": "image"
+        }
+      ],
+      "time": 1608097145256,
+      "uid": "sWdefgXkqmCK"
+    }
+  ],
+  "tags": [ "GCP", "Kubernetes", "Docker", "React", "NextJS" ],
+  "title": "How to deploy NextJS app to Kubernetes Cluster in GCP with Custom Domain?",
+  "uid": "FHQPWEGGWSPT",
+  "updatedAt": 1612512549586
+}
