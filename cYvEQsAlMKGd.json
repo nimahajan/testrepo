@@ -1,0 +1,136 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1608741833152,
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": {
+            "caption": "",
+            "stretched": true,
+            "unsplash": {
+              "author": "Dan Gold",
+              "profileLink": "https://unsplash.com/@danielcgold"
+            },
+            "url": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MXwxNjQ1NTR8MHwxfHNlYXJjaHwyfHxjYXJ8ZW58MHx8fA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
+        { "data": { "text": "Start writing..." }, "type": "paragraph" },
+        {
+          "data": {
+            "message": "Please&nbsp;<div style=\"pointer-events: none;\" data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\">adsa</div><div style=\"pointer-events: none;\" data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\">d</div><div style=\"pointer-events: none;\" data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\">a</div><div style=\"pointer-events: none;\" data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\"><br style=\"pointer-events: none;\" data-cached-aria-disabled=\"\" aria-disabled=\"true\" data-cached-tabindex=\"\" tabindex=\"-1\" data-inert-pointer-events=\"\" data-ally-disabled=\"true\"></div>",
+            "type": "danger"
+          },
+          "type": "alert"
+        },
+        {
+          "data": { "code": "asd\nas\nda\nds\na", "language": "none" },
+          "type": "code"
+        },
+        {
+          "data": {
+            "correctAnswer": "a",
+            "hint": "",
+            "options": [ "a", "b" ],
+            "question": "What class would you use for embedding an image?",
+            "type": "MCQ"
+          },
+          "type": "question"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "400",
+            "service": "youtube",
+            "source": "https://www.youtube.com/watch?v=QkGI4OHSjA0",
+            "width": 580
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "200",
+            "service": "github",
+            "source": "https://github.com/ranemihir/editorjs-github-gist-plugin/blob/master/index.html#L41-L47",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FdKGsajsCMIKP?alt=media&amp;token=8689a27d-206b-4b3a-9ecd-f5afb0cd8648",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "events": [] }, "type": "iframe" },
+        { "data": { "events": [] }, "type": "audionote" }
+      ],
+      "time": 1613392102510,
+      "uid": "DbRQbhLekdee"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Untitled" }, "type": "header" },
+        {
+          "data": {
+            "caption": "",
+            "height": "400",
+            "service": "youtube",
+            "source": "https://www.youtube.com/watch?v=IW2-gsi7SSI"
+          },
+          "type": "embed"
+        },
+        { "data": { "text": "Start writing..." }, "type": "paragraph" },
+        {
+          "data": {
+            "caption": "",
+            "height": "275",
+            "service": "twitter",
+            "source": "https://twitter.com/orangebook_/status/1349661195117223936"
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "700",
+            "service": "googleForms",
+            "source": "https://docs.google.com/forms/d/e/1FAIpQLSe2qRyofgrFK0mjddvGBsaioyQgwGP2w1EPz764UkkWSm5asw/viewform?usp=sf_link"
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "400",
+            "service": "youtube",
+            "source": "https://www.youtube.com/watch?v=_poLOQLue1U"
+          },
+          "type": "embed"
+        }
+      ],
+      "time": 1613392090817,
+      "uid": "gfvVxdhlxtWl"
+    }
+  ],
+  "title": "Untitled Walkthrough",
+  "uid": "cYvEQsAlMKGd",
+  "updatedAt": 1613392119897
+}
