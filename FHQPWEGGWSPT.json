@@ -21,6 +21,7 @@
           },
           "type": "paragraph"
         },
+        { "data": { "style": "line" }, "type": "delimiter" },
         { "data": { "level": 3, "text": "Prerequisites" }, "type": "header" },
         {
           "data": {
@@ -39,7 +40,8 @@
           },
           "type": "alert"
         },
-        { "data": { "level": 4, "text": "Setup" }, "type": "header" },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        { "data": { "level": 4, "text": "What you need?" }, "type": "header" },
         {
           "data": {
             "text": "Before we begin, we need below dependencies installed on your machine -"
@@ -109,7 +111,7 @@
         { "data": { "text": "Let's get Started !" }, "type": "paragraph" }
       ],
       "esTimeInMin": 3,
-      "time": 1612512574862,
+      "time": 1614242788812,
       "uid": "HHyaDDKiqxin"
     },
     {
@@ -861,5 +863,5 @@
   "tags": [ "GCP", "Kubernetes", "Docker", "React", "NextJS" ],
   "title": "How to deploy NextJS app to Kubernetes Cluster in GCP with Custom Domain?",
   "uid": "FHQPWEGGWSPT",
-  "updatedAt": 1612512582598
+  "updatedAt": 1614242799685
 }
