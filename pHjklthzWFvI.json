@@ -11,13 +11,13 @@
         { "data": { "level": 2, "text": "Overview" }, "type": "header" },
         {
           "data": {
-            "text": "Terraform is a popular choice to create your AWS infrastructure programmatically. There is a lot of documentation available on terraform.&nbsp;"
+            "text": "AWS is a complex cloud service provider. Creating a SAAS on AWS can be a daunting task, especially if you are not familiar with AWS. There are so many configurations about VPC, subnets, security groups, etc to be created before you even begin provisioning your application/database servers. The UI and documentation can be very confusing. So I rather prefer a script/code-based approach to creating infrastructure.&nbsp;"
           },
           "type": "paragraph"
         },
         {
           "data": {
-            "text": "However, if you not much familiar with AWS networking and/or terraform, it can be very time-consuming to get your basic infrastructure set up for your SAAS.&nbsp;"
+            "text": " Terraform is a popular choice to create your AWS infrastructure programmatically.&nbsp;This how-to guide helps you create a basic networking stack using terraform that you can use to create your SAAS.&nbsp;"
           },
           "type": "paragraph"
         },
@@ -104,7 +104,7 @@
           "type": "linkTool"
         }
       ],
-      "time": 1620502411402,
+      "time": 1620503141575,
       "uid": "yayFPHBLaEuW"
     },
     {
@@ -455,5 +455,5 @@
   "tags": [ "terraform", "AWS", "VPC", "Networking" ],
   "title": "How to create a VPC, subnet, and networking setup in AWS using terraform?",
   "uid": "pHjklthzWFvI",
-  "updatedAt": 1620502836271
+  "updatedAt": 1620503156813
 }
