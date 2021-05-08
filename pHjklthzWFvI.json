@@ -11,7 +11,13 @@
         { "data": { "level": 2, "text": "Overview" }, "type": "header" },
         {
           "data": {
-            "text": "AWS is a complex cloud service provider. Creating a SAAS on AWS can be a daunting task, especially if you are not familiar with AWS. There are so many configurations about VPC, subnets, security groups, etc to be created before you even begin provisioning your application/database servers. The UI and documentation can be very confusing. So I rather prefer a script/code-based approach to creating infrastructure.&nbsp;"
+            "text": "AWS is a very big and complex platform. Creating a SAAS on AWS can be a daunting task, especially if you are not familiar with AWS. There are so many configurations about VPC, subnets, security groups, etc to be created before you even begin provisioning your application/database servers. The UI and documentation can be very confusing. "
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "So I prefer a script/code-based approach to creating infrastructure.&nbsp;"
           },
           "type": "paragraph"
         },
@@ -104,7 +110,7 @@
           "type": "linkTool"
         }
       ],
-      "time": 1620503141575,
+      "time": 1620504459666,
       "uid": "yayFPHBLaEuW"
     },
     {
@@ -452,5 +458,5 @@
   "tags": [ "terraform", "AWS", "VPC", "Networking" ],
   "title": "How to create a VPC, subnet, and networking setup in AWS using terraform?",
   "uid": "pHjklthzWFvI",
-  "updatedAt": 1620503274775
+  "updatedAt": 1620504482329
 }
