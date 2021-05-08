@@ -138,7 +138,7 @@
           "type": "code"
         }
       ],
-      "time": 1620502479822,
+      "time": 1620503209316,
       "uid": "GZfwnhMJYQct"
     },
     {
@@ -240,13 +240,13 @@
           "type": "embed"
         }
       ],
-      "time": 1620502711681,
+      "time": 1620503211657,
       "uid": "IHJFvjZtARzD"
     },
     {
       "blocks": [
         {
-          "data": { "level": 2, "text": "Create network module output" },
+          "data": { "level": 2, "text": "Network module output" },
           "type": "header"
         },
         {
@@ -270,16 +270,13 @@
           "type": "embed"
         }
       ],
-      "time": 1620502720818,
+      "time": 1620503221015,
       "uid": "JbJEmllgjHny"
     },
     {
       "blocks": [
         {
-          "data": {
-            "level": 2,
-            "text": "Define High level main script and variables"
-          },
+          "data": { "level": 2, "text": "Create main script and variables" },
           "type": "header"
         },
         {
@@ -311,13 +308,13 @@
           "type": "embed"
         }
       ],
-      "time": 1620502736611,
+      "time": 1620503243123,
       "uid": "NFeyhJiEjiPF"
     },
     {
       "blocks": [
         {
-          "data": { "level": 2, "text": "Pass configurations" },
+          "data": { "level": 2, "text": "Create stack configurations" },
           "type": "header"
         },
         {
@@ -366,7 +363,7 @@
           "type": "paragraph"
         }
       ],
-      "time": 1620502748642,
+      "time": 1620503254602,
       "uid": "CIdAqSiGfEXn"
     },
     {
@@ -429,7 +426,7 @@
           "type": "alert"
         }
       ],
-      "time": 1620502751629,
+      "time": 1620503264562,
       "uid": "ijawVMVeErRj"
     },
     {
@@ -448,12 +445,12 @@
           "type": "paragraph"
         }
       ],
-      "time": 1620502754605,
+      "time": 1620503271123,
       "uid": "GIwGdLCkouEo"
     }
   ],
   "tags": [ "terraform", "AWS", "VPC", "Networking" ],
   "title": "How to create a VPC, subnet, and networking setup in AWS using terraform?",
   "uid": "pHjklthzWFvI",
-  "updatedAt": 1620503156813
+  "updatedAt": 1620503274775
 }
