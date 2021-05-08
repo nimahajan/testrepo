@@ -1,0 +1,459 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1620239210848,
+  "description": "While creating your SAAS on AWS, your need a basic networking stack. This how-to guide provides you terraform instructions to achieve that.",
+  "difficulty": "Intermediate",
+  "sharing": { "mode": "Public", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Overview" }, "type": "header" },
+        {
+          "data": {
+            "text": "Terraform is a popular choice to create your AWS infrastructure programmatically. There is a lot of documentation available on terraform.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "However, if you not much familiar with AWS networking and/or terraform, it can be very time-consuming to get your basic infrastructure set up for your SAAS.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will create?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "If you are starting a new SAAS project and planning to run your infrastructure on AWS, then you are going to need&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "A VPC",
+              "1 public/private subnet per availability zone",
+              "Networking set up like a public internet gateway and a private NAT gateway",
+              "Security group to control ingress/egress traffic&nbsp;"
+            ],
+            "style": "unordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": { "text": "The overall setup will look like below -&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Our basic networking stack",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FjYnkUinrJYuv?alt=media&amp;token=2f7d45f9-5e27-4268-8fb3-1d204e774ef4",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              "AWS Account with programmatic access&nbsp;",
+              "<a href=\"https://www.terraform.io/downloads.html\">Terraform</a> (&gt;0.12) installed on your operating system and binary is&nbsp;included in your system's PATH.&nbsp;"
+            ],
+            "style": "ticked"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "If you are using mac, you can get terraform using homebrew easily.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ brew tap hashicorp/tap\n$ brew install hashicorp/tap/terraform\n\n# To verify everything is right, check version \n$ terraform version\nTerraform v0.15.1\non darwin_amd64",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        { "data": { "text": "Let's start !" }, "type": "paragraph" },
+        { "data": { "level": 3, "text": "Source Code" }, "type": "header" },
+        {
+          "data": { "text": "The entire source code is available here&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet",
+            "meta": {
+              "description": "Contribute to Walkthroughs/terraform-aws-vpc-subnet development by creating an account on GitHub.",
+              "image": {
+                "url": "https://opengraph.githubassets.com/29cb6c5d22ec47802665320ccf4f46191e1fffd591c11172d0827789465eb01c/Walkthroughs/terraform-aws-vpc-subnet"
+              },
+              "title": "Walkthroughs/terraform-aws-vpc-subnet"
+            }
+          },
+          "type": "linkTool"
+        }
+      ],
+      "time": 1620502411402,
+      "uid": "yayFPHBLaEuW"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Set up directory structure" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Let's create a skeleton for our scripts. Networking setup tends to grow over time with more security groups, firewall rules, etc. Hence it is ideal to create a separate networking module instead of putting everything in one main script."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ touch main.tf\n$ touch terraform.tfvars\n$ touch variables.tf\n$ mkdir -p modules/networking/\n$ touch modules/networking/main.tf\n$ touch modules/networking/output.tf\n$ touch modules/networking/variables.tf",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "Now, if I print the tree, this is how it looks" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": ".\n├── main.tf\n├── modules\n│   └── networking\n│       ├── main.tf\n│       ├── output.tf\n│       └── variables.tf\n├── terraform.tfvars\n└── variables.tf\n\n2 directories, 6 files",
+            "language": "plaintext"
+          },
+          "type": "code"
+        }
+      ],
+      "time": 1620502479822,
+      "uid": "GZfwnhMJYQct"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Create a networking module" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "As your project grows, the size of scripts will grow. Hence, it is ideal to create a module."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "This is the most important part of the project.&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "For the purpose of brevity, this step only describes the important components of the networking script.&nbsp;<div><br></div><div>You can view the entire file&nbsp;<a href=\"https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/modules/networking/main.tf\">here</a><br></div>",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": { "level": 3, "text": "1. Define our VPC" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "The highest level resource we create is a VPC.&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/modules/networking/main.tf#L2-L11"
+          },
+          "type": "embed"
+        },
+        {
+          "data": { "level": 3, "text": "2. Define Subnets" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Each VPC has 1 private and 1 public subnet in each availability zone."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/modules/networking/main.tf#L41-L67"
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "An important thing to notice here is&nbsp;&nbsp;<code class=\"inline-code\">map_public_ip_on_launch</code> is true for public and false for the private subnet."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "3. Configure Internet Gateway and NAT" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "We also additionally need an elastic IP for our NAT." },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/modules/networking/main.tf#L13-L39"
+          },
+          "type": "embed"
+        },
+        {
+          "data": { "level": 3, "text": "4. Define a security group" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "message": "Please check below configurations and tune as per your requirements.<div><br></div><div>This scripts is allowing SSH access (Port 22) to entire VPC. This is helpful during development, but you may want to remove this in production environment.</div>",
+            "type": "primary"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "caption": "Security group with ingress SSH access and internet egress access to all instances",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/modules/networking/main.tf#L115-L143"
+          },
+          "type": "embed"
+        }
+      ],
+      "time": 1620502711681,
+      "uid": "IHJFvjZtARzD"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Create network module output" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "The IDs of the VPC, subnets, and the security group that the module creates will be often required when you create your other AWS resources like ec2 instances or ECS cluster, etc.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "That is why its important to export these values from the terraform module."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/modules/networking/output.tf"
+          },
+          "type": "embed"
+        }
+      ],
+      "time": 1620502720818,
+      "uid": "JbJEmllgjHny"
+    },
+    {
+      "blocks": [
+        {
+          "data": {
+            "level": 2,
+            "text": "Define High level main script and variables"
+          },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Once the networking module is defined, we want to invoke that module from the main script and pass the necessary variables.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/main.tf"
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "To make our stack configurable, we also need to define the required parameters are the input to the main script.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/variables.tf"
+          },
+          "type": "embed"
+        }
+      ],
+      "time": 1620502736611,
+      "uid": "NFeyhJiEjiPF"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Pass configurations" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "To create infrastructure, we need initial information like - region, zones, CIDR blocks, etc. We can define these are variables as a good practice."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Variables required to run our scripts.",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/variables.tf"
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "Now, we need to provide the actual values. While we can pass these from the command line, an easier way is to define a <code class=\"inline-code\">terraform.tfvars</code> file.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "Here is my configuration." },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "<div><span style=\"font-size: 0.95rem; letter-spacing: 0.01071em;\">You should change values in this file as per your requirements</span></div>",
+            "type": "warning"
+          },
+          "type": "alert"
+        },
+        {
+          "data": {
+            "caption": "",
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/terraform-aws-vpc-subnet/blob/main/terraform.tfvars"
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "You can learn more about CIDR blocks <a href=\"https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking\">here</a>."
+          },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1620502748642,
+      "uid": "CIdAqSiGfEXn"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Running the scripts" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "To invoke the script and you need first setup your AWS account access.&nbsp;&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 4, "text": "Setup AWS Credentials with Terraform" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Terraform programmatically creates infrastructure for you. To do so, it needs your AWS access keys.&nbsp;You can get your access keys from your <u class=\"cdx-underline\">AWS console &gt; IAM &gt; User &gt; Security Credentials</u> section."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "A better way to pass these credentials is to set them in below environment variables."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ export AWS_ACCESS_KEY_ID=\"<YOUR_KEY_ID>\"\n$ export AWS_SECRET_ACCESS_KEY=\"<YOUR_SECRET>\"",
+            "language": "bash"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "level": 3, "text": "Initialize and run the terraform scripts" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "To create the actual stack, just run the usual terraform scripts. As mentioned before, it will take your input parameters from the terraform.tfvars files."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ terraform init\n$ terraform apply",
+            "language": "none"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "message": "<div><span style=\"font-size: 0.95rem; letter-spacing: 0.01071em;\">Resources on AWS cost money. If you want to cleanly destroy all the resources terraform provisioned, just run </span><code class=\"inline-code\">terraform destroy</code><br></div>",
+            "type": "danger"
+          },
+          "type": "alert"
+        }
+      ],
+      "time": 1620502751629,
+      "uid": "ijawVMVeErRj"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Conclusion" }, "type": "header" },
+        {
+          "data": {
+            "text": "Creating a proper network stack for your SAAS on AWS is not trivial. There are a lot of resources that need to be provisioned.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Scripts shared in this how-to guide help you get a basic stack that you can later build upon iteratively."
+          },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1620502754605,
+      "uid": "GIwGdLCkouEo"
+    }
+  ],
+  "tags": [ "terraform", "AWS", "VPC", "Networking" ],
+  "title": "How to create a VPC, subnet, and networking setup in AWS using terraform?",
+  "uid": "pHjklthzWFvI",
+  "updatedAt": 1620502836271
+}
