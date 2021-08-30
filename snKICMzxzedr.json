@@ -1,0 +1,407 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1607409168856,
+  "description": "This is a small codelab that introduces you to editorjs - an open source block style editor and shows how to integrate it in a react app.",
+  "difficulty": "Intermediate",
+  "sharing": { "mode": "Public", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": {
+            "caption": ".",
+            "stretched": true,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FJcBzFkzazALR?alt=media&amp;token=23c665b8-3ef0-4897-9344-22decfa1da9a",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        {
+          "data": {
+            "level": 2,
+            "text": "Introduction to <a href=\"https://editorjs.io/\">editorjs</a>"
+          },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "If you have ever done front end development, you would know how difficult building and customizing text editor to your needs can be. Text Editors are not a new thing. But as applications are getting more integrated and rich with content, editors are evolving too. "
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "While searching for a editor for my own project, I ran into Editor.js. It is an open source project and is quite popular on <a href=\"https://github.com/codex-team/editor.js\">Github</a> (&gt;10K stars). This editor is quite different compared to your most modern editors. Here are some of the highlights of editor.js."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "<b>Block style editor</b> - every piece of content in the editor is a block. A block can be anything - a paragraph, header, image or literally anything. Popularity of such editors is rising quickly. Popular startups like&nbsp;<a href=\"https://www.notion.so/\">notion.so</a>&nbsp;are using similar editors at the core.",
+              "<b>Clean JSON Output</b> - The final generated data is in JSON format. This is a very big advantage. A lot of editors out there store data in markup html or in markdown. But having JSON makes is very easy to expand the functionality.",
+              "<b>Supports Plugins</b> - You can build your own plugin that can extend the functionality of the editor. You can do anything in plugins e.g. calling APIs, transforming data, enriching UI experiences etc.&nbsp;The plugin ecosystem allows your build more richer and interactive content that your usual editors.",
+              "<b>Active Project</b> - It is in active development and is stable and mature for production use.&nbsp;",
+              "<b>Documentation&nbsp;</b>- It has very good documentation and <a href=\"https://github.com/editor-js/awesome-editorjs\">awesome-editorjs</a>&nbsp;has a good compilation of plugins and things built on top of the editor.js.&nbsp;"
+            ],
+            "style": "ordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "So I wanted to give it a try. In this tutorial, I plan to use EditorJS in a react application."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        { "data": { "level": 3, "text": "ReactJS" }, "type": "header" },
+        {
+          "data": {
+            "text": "<a href=\"https://reactjs.org/\">ReactJS</a> needs not introduction. It is one of the most widely used front-end development framework. React community has developed thousands of open source projects around react. But integrating EditorJS into React app is not straight forward as editorjs is not a react component. Also, if you are using Server Side Rendering or static generation, you may run into issues. This tutorial will help you do this setup correctly."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "So let's get started.&nbsp;" },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "What you will learn?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              "How to embed editor.js into a sample react application page?",
+              "Introduction to editor.js plugin APIs&nbsp;"
+            ],
+            "style": "ticked"
+          },
+          "type": "list"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "What you will need?" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              "NodeJS environment setup on your machine.&nbsp;",
+              "React requires&nbsp;<code class=\"inline-code\">Node &gt;= 8.10</code> &amp; <code class=\"inline-code\">npm &gt;= 5.6</code>"
+            ],
+            "style": "unordered"
+          },
+          "type": "list"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        { "data": { "level": 3, "text": "Source Code" }, "type": "header" },
+        {
+          "data": {
+            "link": "https://github.com/Walkthroughs/editorjs-with-react",
+            "meta": {
+              "description": "This is a codelab that introduces editorjs and shows how to integrated into a react application. - Walkthroughs/editorjs-with-react",
+              "image": {
+                "url": "https://avatars0.githubusercontent.com/u/75364885?s=400&amp;v=4"
+              },
+              "title": "Walkthroughs/editorjs-with-react"
+            }
+          },
+          "type": "linkTool"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        { "data": { "level": 3, "text": "Final Output" }, "type": "header" },
+        {
+          "data": { "text": "The final output page will look like this -&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": ".",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FNdCdwPKKlFaQ?alt=media&amp;token=3e813e1c-d7de-4db4-9542-df98ec27c243",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        }
+      ],
+      "time": 1630287054696,
+      "uid": "bGRGcwmqDRle"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Scaffolding Basic Application" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "As mentioned earlier, we will use react to render our editor. Open your terminal and run below commands&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ npx create-react-app editorjs-with-react\n$ cd editorjs-with-react",
+            "language": "plaintext"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "To ensure everything is setup correctly, lets start our application&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "$ yarn start", "language": "plaintext" },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "If you now visit&nbsp;<a href=\"http://localhost:3000/\">http://localhost:3000/</a>, you can see the default react application page&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Screenshot of localhost page",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FFQXlomrqMMbZ?alt=media&amp;token=974beb48-d5ea-4562-bbe6-7cfa1eb6b4f8",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "Additional Dependencies" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "For this exercise, I plan to use <a href=\"http://material-ui.com/\">Material UI</a> React components library. It offers a wide variety of components that simplifies taking inputs and styling components.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "$ yarn add @material-ui/core", "language": "plaintext" },
+          "type": "code"
+        }
+      ],
+      "time": 1608093056434,
+      "uid": "iAnjqALiybGq"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Embedding editorjs in React page" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Let's first add Editor.js as an dependency into our app.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ yarn add @editorjs/editorjs\n$ yarn add @editorjs/header  ",
+            "language": "plaintext"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "Editor.js is is not a react component. So we can create a wrapper component that takes care of managing the life cycle of editor.js instance in the component."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Let's create a react component to that instantiates an editor inside our page.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-with-react/blob/master/src/Editor.js",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "level": 3, "text": "Code Explanation" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "1. The most important part of the above code is -" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-with-react/blob/master/src/Editor.js#L27-L36",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "EditorJS gets initialized once our component is rendered. So we use the <code class=\"inline-code\">useEffects</code> and <code class=\"inline-code\">useRef</code> React Hooks to initialize this editor just once and destroy it once our component is destroyed."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "2. We need a create a placeholder where editor will get initialized. So we create a <code class=\"inline-code\">div</code> with a unique ID -&nbsp;<code class=\"inline-code\">EDITTOR_HOLDER_ID</code>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-with-react/blob/master/src/Editor.js#L58-L63",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "3. The editor is initialized by a call to&nbsp;<code class=\"inline-code\">initEditor()</code>. We need to share the reference to the <code class=\"inline-code\">div</code> element i.e.&nbsp;<code class=\"inline-code\">EDITTOR_HOLDER_ID</code> under which the editor instance is attached.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-with-react/blob/master/src/Editor.js#L38-L56",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "The&nbsp;<code class=\"inline-code\">data</code>&nbsp;configuration is to provide some initial data in the editor."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "The <code class=\"inline-code\">onReady</code> function is a callback provided by editorjs to notify when editor is completely initialized.&nbsp;<br><br>The <code class=\"inline-code\">onChange</code> function is a callback provided by editorjs to notify whenever the content in the editor changes."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "The <code class=\"inline-code\">tools</code> configuration is where you can provide list of plugins you want to support in the editor."
+          },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1608093068858,
+      "uid": "dPQqeqhvOmZh"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Show Editor In our App&nbsp;" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "In previous step, we just created a component wrapping the editorjs instance. Now, lets change our <code class=\"inline-code\">App.js</code> file to show a simple page with Editor and add some basic styling for the page."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-with-react/blob/master/src/App.js",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "Now, restart your web server ('<code class=\"inline-code\">yarn start</code>') and your current page at <a href=\"http://localhost:3000\">http://localhost:3000</a> should look like -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Screenshot of current state",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FhLDjtBomjBox?alt=media&amp;token=5a96e795-3b7a-4c2b-b450-1b9b0cb9be58",
+            "withBackground": false,
+            "withBorder": false
+          },
+          "type": "image"
+        }
+      ],
+      "time": 1608092750210,
+      "uid": "tWSPIoGLcGCU"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Conclusion" }, "type": "header" },
+        {
+          "data": {
+            "text": "Thank you for checking out this tutorial. If you are using EditorJS in your application, consider supporting them&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://opencollective.com/editorjs",
+            "meta": {
+              "description": "The new block-styled editor that returns clean data output",
+              "image": {
+                "url": "https://images.opencollective.com/editorjs/132a36a/background.png"
+              },
+              "title": "Editor.js - Open Collective"
+            }
+          },
+          "type": "linkTool"
+        },
+        {
+          "data": { "text": "For more learning, you can look into below resources" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "Official Website -&nbsp;<a href=\"https://editorjs.io/\">https://editorjs.io/</a>",
+              "Collection of useful things around editorjs -&nbsp;<a href=\"https://github.com/editor-js/awesome-editorjs\">https://github.com/editor-js/awesome-editorjs</a>"
+            ],
+            "style": "ordered"
+          },
+          "type": "list"
+        }
+      ],
+      "time": 1607939759760,
+      "uid": "CsPFjBOZxnYe"
+    }
+  ],
+  "tags": [ "editorjs", "react" ],
+  "title": "Codelab: Integrating Editor.js into your react application",
+  "uid": "snKICMzxzedr",
+  "updatedAt": 1630287073921
+}
