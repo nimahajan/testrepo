@@ -1,0 +1,76 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1630389471616,
+  "description": "this is the new walkthrough",
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Overview", "uid": "CjsdVzFAxzWp" },
+          "id": "EZJYXu33Lo",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write overview", "uid": "kxYCBUxvIgFD" },
+          "id": "QCfPyyKSv_",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "GQKoeDpUmWNk" },
+          "id": "0XE6UJUzr5",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Requirement 1" ],
+            "style": "ordered",
+            "uid": "jKRmwclFyBfe"
+          },
+          "id": "3q2meX8r21",
+          "type": "list"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "RXPmVrNqMUjm"
+          },
+          "id": "J5vV3lisrI",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Objective 1" ],
+            "style": "ticked",
+            "uid": "wkucTXUdRDFO"
+          },
+          "id": "pkEBJbWpcV",
+          "type": "list"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "Wow\nThs is is good.\n\n",
+                "language": "PlainText",
+                "tabName": "PlainText"
+              },
+              { "code": "", "language": "go", "tabName": "go" }
+            ],
+            "uid": "gUYGsNDEvttZ"
+          },
+          "id": "6C3HfS3ypS",
+          "type": "code"
+        }
+      ],
+      "time": 1637906623604,
+      "uid": "nqUsfhlCEINm"
+    }
+  ],
+  "tags": [ "testing" ],
+  "title": "my private walkthrough",
+  "uid": "LaFIsNDESpny",
+  "updatedAt": 1637906663745
+}
