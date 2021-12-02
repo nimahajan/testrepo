@@ -1,0 +1,78 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1637216806626,
+  "description": "",
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "xjuKlXbGVkUT" },
+          "id": "g_JUbM1PWD",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "EhiuzXXoECdc" },
+          "id": "AexEn97hwE",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "uid": "oVGqqmhjCGLt",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FUdZREzcfvPCw?alt=media&amp;token=975a4355-6f45-4ed9-9803-8b645269db1a",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": true
+          },
+          "id": "bCBq_rENzs",
+          "type": "image"
+        }
+      ],
+      "time": 1638211004833,
+      "title": "Step 1",
+      "uid": "kgmRzxAwCFEY"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled3", "uid": "jTYhFjCfRILj" },
+          "id": "3Ak8FWqBy-",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "pEKFCqUeiJNO" },
+          "id": "h1P2I8JjCG",
+          "type": "paragraph"
+        }
+      ],
+      "esTimeInMin": "13",
+      "time": 1638067562553,
+      "title": "StepXXYS",
+      "uid": "kgNoFZnQsXzb"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "QvskkYSAWyZF" },
+          "id": "ZZMoJWCOGT",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "fZBcluuqPhmJ" },
+          "id": "1g13fhuiqX",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1638067181450,
+      "title": "Step 3",
+      "uid": "usJLEbAEfyBx"
+    }
+  ],
+  "tags": [],
+  "title": "My test Walkthrough",
+  "uid": "zfvSEaObHXnv",
+  "updatedAt": 1638423439641
+}
