@@ -10,31 +10,27 @@
       "blocks": [
         {
           "data": {
-            "caption": ".",
-            "stretched": true,
-            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FJcBzFkzazALR?alt=media&amp;token=23c665b8-3ef0-4897-9344-22decfa1da9a",
-            "withBackground": false,
-            "withBorder": false
-          },
-          "type": "image"
-        },
-        {
-          "data": {
             "level": 2,
-            "text": "Introduction to <a href=\"https://editorjs.io/\">editorjs</a>"
+            "text": "Introduction to <a href=\"https://editorjs.io/\">editorjs</a>",
+            "uid": "bghBRvgxruKu"
           },
+          "id": "I1dPfExfWL",
           "type": "header"
         },
         {
           "data": {
-            "text": "If you have ever done front end development, you would know how difficult building and customizing text editor to your needs can be. Text Editors are not a new thing. But as applications are getting more integrated and rich with content, editors are evolving too. "
+            "text": "If you have ever done front end development, you would know how difficult building and customizing text editor to your needs can be. Text Editors are not a new thing. But as applications are getting more integrated and rich with content, editors are evolving too. ",
+            "uid": "yqnZYbBHtRVe"
           },
+          "id": "LmeNYfA7Ld",
           "type": "paragraph"
         },
         {
           "data": {
-            "text": "While searching for a editor for my own project, I ran into Editor.js. It is an open source project and is quite popular on <a href=\"https://github.com/codex-team/editor.js\">Github</a> (&gt;10K stars). This editor is quite different compared to your most modern editors. Here are some of the highlights of editor.js."
+            "text": "While searching for a editor for my own project, I ran into Editor.js. It is an open source project and is quite popular on <a href=\"https://github.com/codex-team/editor.js\">Github</a> (&gt;10K stars). This editor is quite different compared to your most modern editors. Here are some of the highlights of editor.js.",
+            "uid": "FpOForDWGxzx"
           },
+          "id": "CgaNiQ6je1",
           "type": "paragraph"
         },
         {
@@ -46,31 +42,55 @@
               "<b>Active Project</b> - It is in active development and is stable and mature for production use.&nbsp;",
               "<b>Documentation&nbsp;</b>- It has very good documentation and <a href=\"https://github.com/editor-js/awesome-editorjs\">awesome-editorjs</a>&nbsp;has a good compilation of plugins and things built on top of the editor.js.&nbsp;"
             ],
-            "style": "ordered"
+            "style": "ordered",
+            "uid": "rvSgUDyxOMld"
           },
+          "id": "xXR7wQHJYI",
           "type": "list"
         },
         {
           "data": {
-            "text": "So I wanted to give it a try. In this tutorial, I plan to use EditorJS in a react application."
+            "text": "So I wanted to give it a try. In this tutorial, I plan to use EditorJS in a react application.",
+            "uid": "nhGlELYHKFrA"
           },
+          "id": "fZkXNW5pGC",
           "type": "paragraph"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
-        { "data": { "level": 3, "text": "ReactJS" }, "type": "header" },
+        {
+          "data": { "style": "line", "uid": "wapBhEJvCFXU" },
+          "id": "lxP8hwPzjH",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "ReactJS", "uid": "QarmwfGMkODb" },
+          "id": "DbnDNEFWNk",
+          "type": "header"
+        },
         {
           "data": {
-            "text": "<a href=\"https://reactjs.org/\">ReactJS</a> needs not introduction. It is one of the most widely used front-end development framework. React community has developed thousands of open source projects around react. But integrating EditorJS into React app is not straight forward as editorjs is not a react component. Also, if you are using Server Side Rendering or static generation, you may run into issues. This tutorial will help you do this setup correctly."
+            "text": "<a href=\"https://reactjs.org/\">ReactJS</a> needs not introduction. It is one of the most widely used front-end development framework. React community has developed thousands of open source projects around react. But integrating EditorJS into React app is not straight forward as editorjs is not a react component. Also, if you are using Server Side Rendering or static generation, you may run into issues. This tutorial will help you do this setup correctly.",
+            "uid": "YJaOQvqokgLU"
           },
+          "id": "o0UoL1nw0U",
           "type": "paragraph"
         },
         {
-          "data": { "text": "So let's get started.&nbsp;" },
+          "data": { "text": "So let's get started.&nbsp;", "uid": "OswEGcfrZujm" },
+          "id": "1UGI23y3zi",
           "type": "paragraph"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
         {
-          "data": { "level": 3, "text": "What you will learn?" },
+          "data": { "style": "line", "uid": "zzIxojLVuVGP" },
+          "id": "SnxdXuRP42",
+          "type": "delimiter"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "CbjCNelMDtAf"
+          },
+          "id": "QMBeSEpyx7",
           "type": "header"
         },
         {
@@ -79,13 +99,20 @@
               "How to embed editor.js into a sample react application page?",
               "Introduction to editor.js plugin APIs&nbsp;"
             ],
-            "style": "ticked"
+            "style": "ticked",
+            "uid": "eFoQgmjTBDoL"
           },
+          "id": "3pnPRs2EHf",
           "type": "list"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
         {
-          "data": { "level": 3, "text": "What you will need?" },
+          "data": { "style": "line", "uid": "mEquvsgYtwsq" },
+          "id": "xhNvjrXcjp",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "XFqtXvFPTSlw" },
+          "id": "DfNLl6zBHr",
           "type": "header"
         },
         {
@@ -94,12 +121,22 @@
               "NodeJS environment setup on your machine.&nbsp;",
               "React requires&nbsp;<code class=\"inline-code\">Node &gt;= 8.10</code> &amp; <code class=\"inline-code\">npm &gt;= 5.6</code>"
             ],
-            "style": "unordered"
+            "style": "unordered",
+            "uid": "cyMGcqmxmPCE"
           },
+          "id": "Iu48mKuZg5",
           "type": "list"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
-        { "data": { "level": 3, "text": "Source Code" }, "type": "header" },
+        {
+          "data": { "style": "line", "uid": "yTzgcGsRQDQV" },
+          "id": "r1d0PbIFlM",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "Source Code", "uid": "LXUpwVkLTLoJ" },
+          "id": "ZdGbonArSB",
+          "type": "header"
+        },
         {
           "data": {
             "link": "https://github.com/Walkthroughs/editorjs-with-react",
@@ -109,28 +146,45 @@
                 "url": "https://avatars0.githubusercontent.com/u/75364885?s=400&amp;v=4"
               },
               "title": "Walkthroughs/editorjs-with-react"
-            }
+            },
+            "uid": "MvQYDrYZIIWr"
           },
+          "id": "NKjBCDmaVi",
           "type": "linkTool"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
-        { "data": { "level": 3, "text": "Final Output" }, "type": "header" },
         {
-          "data": { "text": "The final output page will look like this -&nbsp;" },
+          "data": { "style": "line", "uid": "aHTkGkrqXLcQ" },
+          "id": "j-EB0oJNQm",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "Final Output", "uid": "tdPxoaAfHmMR" },
+          "id": "t-zxbSOVYv",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "The final output page will look like this -&nbsp;",
+            "uid": "mJmNIYgUoXcQ"
+          },
+          "id": "5aV4bE39E4",
           "type": "paragraph"
         },
         {
           "data": {
             "caption": ".",
             "stretched": false,
+            "uid": "JPKqmDzHQlQd",
             "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FNdCdwPKKlFaQ?alt=media&amp;token=3e813e1c-d7de-4db4-9542-df98ec27c243",
             "withBackground": false,
-            "withBorder": false
+            "withBorder": false,
+            "withShadow": false
           },
+          "id": "bD5PDmgNxg",
           "type": "image"
         }
       ],
-      "time": 1630287054696,
+      "time": 1638850811001,
       "uid": "bGRGcwmqDRle"
     },
     {
@@ -403,5 +457,5 @@
   "tags": [ "editorjs", "react" ],
   "title": "Codelab: Integrating Editor.js into your react application",
   "uid": "snKICMzxzedr",
-  "updatedAt": 1638003139589
+  "updatedAt": 1638850818927
 }
