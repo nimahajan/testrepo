@@ -1,0 +1,751 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1608003258911,
+  "description": "In this codelab, we walk you through to create a new custom block tool that shows nice timeline in the editorjs. ",
+  "difficulty": "Advanced",
+  "sharing": { "mode": "Public", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Introduction", "uid": "VcxMHWtLwlZW" },
+          "id": "Iu7YNx8fxD",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "This is an advanced tutorial on how you can write a sample plugin in editorjs using react.&nbsp;",
+            "uid": "KeXiciTZdkiv"
+          },
+          "id": "8bRhfTWHuJ",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "<b>This walkthrough builds on top of a previous walkthrough in this series. Please check out that walkthrough before starting this one.</b>",
+            "type": "warning",
+            "uid": "pDMgRhjroSHb"
+          },
+          "id": "DPl2BWMS2f",
+          "type": "alert"
+        },
+        {
+          "data": {
+            "link": "https://www.walkthrough.so/pblc/snKICMzxzedr/codelab-integrating-editor-js-into-your-react-application",
+            "meta": {
+              "description": "This is a small codelab that introduces you to editorjs - an open source block style editor and shows how to integrate it in a react app.",
+              "image": { "url": "https://walkthrough.so/social_image-min.png" },
+              "title": "Codelab: Integrating Editor.js into your react application"
+            },
+            "uid": "xesDKxxNhbXB"
+          },
+          "id": "_h0Fu6tg-n",
+          "type": "linkTool"
+        },
+        {
+          "data": {
+            "text": "Editorjs is a modern block style and open source editor that you can embed in your web application. The definition of a block can be extended by simple javascript plugins (Editorjs refers to them as <b>tools</b>).",
+            "uid": "AwFRzjErUXwI"
+          },
+          "id": "s3ctaG7LEy",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "However, editorjs is developed with vanilla javascript and writing tools that way can be a little time consuming. On the other hand, react has plenty of ready to use components that are optimized for all sorts of use cases. That is why, I explored using React to speed up editorjs tools development and this tutorial is focussed on that.&nbsp;",
+            "uid": "lHZvpWegoAsC"
+          },
+          "id": "eEYP0-OXDs",
+          "type": "paragraph"
+        },
+        {
+          "data": { "style": "line", "uid": "ePSdZxCSbCPW" },
+          "id": "-0lbE6DuVI",
+          "type": "delimiter"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "mKKqXZpgXQpG"
+          },
+          "id": "t1ctWzZ2eg",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              "Understanding block tool interface of editorjs",
+              "How to create your custom block tool in react?",
+              "How to add that tool to your editor?"
+            ],
+            "style": "ordered",
+            "uid": "iOtwSoLhYXsO"
+          },
+          "id": "aMIA-abiUQ",
+          "type": "list"
+        },
+        {
+          "data": { "style": "line", "uid": "swywxzIqnQhh" },
+          "id": "oIzc_JBeVE",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "aRXcJvOKgfeX" },
+          "id": "gYst_C42zs",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              "NodeJS environment setup on your machine. React requires&nbsp;<code class=\"inline-code\">Node &gt;= 8.10</code> &amp; <code class=\"inline-code\">npm &gt;= 5.6</code>"
+            ],
+            "style": "unordered",
+            "uid": "HQXmEpxNXMIp"
+          },
+          "id": "sJMRVy1TKt",
+          "type": "list"
+        },
+        {
+          "data": {
+            "items": [ "The final source code is available here -" ],
+            "style": "unordered",
+            "uid": "pavgPwQzuUNO"
+          },
+          "id": "cATVsgTyaY",
+          "type": "list"
+        },
+        {
+          "data": {
+            "link": "https://github.com/Walkthroughs/editorjs-react-tool",
+            "meta": {
+              "description": "This is a codelab that teaches how to write a nice editorjs tool (plugin) using react. - Walkthroughs/editorjs-react-tool",
+              "image": {
+                "url": "https://avatars0.githubusercontent.com/u/75364885?s=400&amp;v=4"
+              },
+              "title": "Walkthroughs/editorjs-react-tool"
+            },
+            "uid": "hsVamMPxQWiD"
+          },
+          "id": "SXBVlL7vhs",
+          "type": "linkTool"
+        },
+        {
+          "data": { "style": "line", "uid": "HypzQwjnXIDU" },
+          "id": "M-MEOuV5cJ",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "Final Output", "uid": "SJyBvoLYxHpM" },
+          "id": "rJF6ZhriTJ",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "We will create a new custom block in editorjs. It will show an option to create a timeline block when you open the toolbox",
+            "uid": "JffUWKGJSHND"
+          },
+          "id": "gLi0E26r49",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "uid": "BCuMgoNJZZFS",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FxTnMfHYdoYxp?alt=media&amp;token=87c836e8-d77c-47a9-8759-d1b23d2c06d6",
+            "withBackground": false,
+            "withBorder": true,
+            "withShadow": false
+          },
+          "id": "JjJTs9m-d6",
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "Once you click on it, you will be able to create a timeline",
+            "uid": "OeTNWKwHTBdI"
+          },
+          "id": "YHKQF5kBjk",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Block created with our tool",
+            "stretched": false,
+            "uid": "ykiyEjyOGQiN",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FlJOcunGLCvPs?alt=media&amp;token=8e310149-d309-40a3-8f0f-4622575afbde",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "GAVQs4dqp8",
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "Then you can edit time and description and add more events. ",
+            "uid": "UgTVmDwThYNX"
+          },
+          "id": "NTLmIuBURm",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Final output will looks something like this -",
+            "uid": "rLWKSQdSQOZB"
+          },
+          "id": "H2NyqjiRBu",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Timeline Block Tool for Editorjs",
+            "stretched": false,
+            "uid": "RbuddWEFdPnD",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FxUSEvmbsPpmQ?alt=media&amp;token=eb0cec89-618d-4ba0-906a-aa35308318df",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "5p4RCH3G33",
+          "type": "image"
+        }
+      ],
+      "time": 1639133403119,
+      "uid": "fPjbPaBZlVqW"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Scaffolding Basic Application" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "In this walkthrough, we will be extending for the code that we developed in previous tutorial."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://github.com/Walkthroughs/editorjs-with-react",
+            "meta": {
+              "description": "This is a codelab that introduces editorjs and shows how to integrated into a react application. - Walkthroughs/editorjs-with-react",
+              "image": {
+                "url": "https://avatars0.githubusercontent.com/u/75364885?s=400&amp;v=4"
+              },
+              "title": "Walkthroughs/editorjs-with-react"
+            }
+          },
+          "type": "linkTool"
+        },
+        {
+          "data": {
+            "text": "To setup the code and install dependencies use below instructions -&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ git clone git@github.com:Walkthroughs/editorjs-with-react.git editorjs-react-plugin\n$ cd editorjs-react-plugin\n$ yarn install",
+            "language": "plaintext"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "For this tutorial, we will be using the Timeline component from the Material UI React components. This component and some icons are is in a separate package. "
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "So lets add those as a dependencies" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "$ yarn add @material-ui/lab\n$ yarn add @material-ui/icons",
+            "language": "plaintext"
+          },
+          "type": "code"
+        }
+      ],
+      "time": 1608096944357,
+      "uid": "qOVXQWGshNCS"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Introduction to Block Tools Interface" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "There are 2 types of tools in editorjs.&nbsp;" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "<b>Inline Tools</b>: Inline tools are for extending the functionality of text e.g. bold, italic or strikethrough etc.",
+              "<b>Block Tools</b>: Block tools are for adding new type of blocks to the editor e.g. images, code boxes, iframe embeds or literally anything you can image.&nbsp;"
+            ],
+            "style": "unordered"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "In this walkthrough, we will focus on block tool.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "While there are quite a few operations, the most important/commonly used ones for writing a block tool are -&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "1.&nbsp;<code class=\"inline-code\">toolbox</code>" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "This function is expected to return the name and icon for your tool."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": " static get toolbox() {\n    return {\n      icon: SVGIcon,\n      title: 'Timeline',\n    };\n  }",
+            "language": "javascript"
+          },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "2.&nbsp;<code class=\"inline-code\">isReadOnlySupported</code>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Editorjs recently added support for readonly mode. In this mode, users can only view the content. Your tool should tell if it supports read only mode."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "static get isReadOnlySupported() {\n    return true;\n}",
+            "language": "javascript"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "3.&nbsp;<code class=\"inline-code\">constructor</code>" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "When editorJS decides to instantiate an instance, it calls the constructor.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "<b>data</b> field provides the data for your block." },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "<b>config</b> field provides config that you provided while attaching this tool with the editor."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "<b>api</b> field exposes a few API from editor" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "<b>readOnly</b> field tells whether you should render data in readOnly mode."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "code": "constructor({ data, config, api, readOnly }) {\n  // Save referencess to \n}",
+            "language": "javascript"
+          },
+          "type": "code"
+        },
+        {
+          "data": { "text": "4.&nbsp;<code class=\"inline-code\">render</code>" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "This function is expected to return a DOM element for the block created by this tool.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "5.&nbsp;<code class=\"inline-code\">save</code>" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "This function is expected to return the clean JSON data that your tool generated. Editorjs will take is and hand it over to your application for persistence."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "<b>More information on these things is available in official docs -</b>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://editorjs.io/creating-a-block-tool",
+            "meta": {
+              "description": "No Description Available",
+              "image": { "url": {} },
+              "title": "Creating a Block Tool"
+            }
+          },
+          "type": "linkTool"
+        }
+      ],
+      "time": 1608096946535,
+      "uid": "SmfSQibHJfIY"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "New editorjs block tool - Timeline" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Lets create a <code class=\"inline-code\">tool.js </code>file under <code class=\"inline-code\">/src/tools/timeline</code> directory. The content are -"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "tool.js",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/tool.js",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": { "level": 3, "text": "Code Walkthrough" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "The important parts of above code are&nbsp;" },
+          "type": "paragraph"
+        },
+        { "data": { "text": "<b>1. Constructor</b>" }, "type": "paragraph" },
+        {
+          "data": {
+            "text": "We retrieve the important piece of information like - data, config and readOnly from the input parameter. Additionally,&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Constructor",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/tool.js#L18-L32",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        { "data": { "text": "<b>2. Render&nbsp;</b>" }, "type": "paragraph" },
+        {
+          "data": {
+            "text": "The render function is expected take the data and showcase UI for the block.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Rendering UI",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/tool.js#L34-L55",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "Since we decided to use react, here we will use <code class=\"inline-code\">ReactDOM.render</code> to embed our react component -&nbsp;<code class=\"inline-code\">EventTimeline</code>. The entire ReactDOM is embedded under our&nbsp;<code class=\"inline-code\">rootNode</code>.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "<code class=\"inline-code\">onDataChange</code>&nbsp;When data changes inside our react component, we need to pass that data to the editorjs tool. The callback does exactly that."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "We also pass the <code class=\"inline-code\">data</code> and the <code class=\"inline-code\">readOnly</code> flags to our React component to render UI correctly."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "text": "<b>3. Save&nbsp;</b>" }, "type": "paragraph" },
+        {
+          "data": {
+            "text": "We simply return the data that we have stored to the editor."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Saving data",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/tool.js#L57-L59",
+            "width": 640
+          },
+          "type": "embed"
+        }
+      ],
+      "time": 1608096960474,
+      "uid": "IVXVfktvTtHh"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "New react component - EventTimeline" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Now lets write our simple React component that needs to&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "&nbsp;Show a timeline if data is available",
+              "Support readOnly mode",
+              "Allow adding events to the timeline in non-readonly mode."
+            ],
+            "style": "ticked"
+          },
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "Lets create a file -&nbsp;<code class=\"inline-code\">eventTimeline.js</code>&nbsp;with below contents -&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/eventTimeline.js",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": { "level": 3, "text": "Code Walkthrough" },
+          "type": "header"
+        },
+        {
+          "data": { "text": "The important parts of the code are -" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "<b>1. Defining component state and propagating state changes</b>"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/eventTimeline.js#L62-L70",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "We will initialize the state with data passed in props or with default data. The&nbsp;<code class=\"inline-code\">updateTimelineData</code> is responsible for setting state of component and then propagating the updates through the <code class=\"inline-code\">onDataChange</code> callback."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "<b>2. Rendering UI and handling readOnly mode</b>" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "JSX for component",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/tools/timeline/eventTimeline.js#L94-L127",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": {
+            "text": "The code for the component is quite straightforward if you understand React. It adds timeline events using material UI <code class=\"inline-code\">Timeline</code> components.&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "We use contentEditable to allow editing time and description of each event and whenever content is changed, we trigger a state update and propagate content change back to editor."
+          },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1608020500094,
+      "uid": "WcSuaGjUFIev"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Attaching tool to our editor" },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Once we create a tool, we need to initialize editor and pass our tool in list of tools that it should show."
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "So in our&nbsp;<code class=\"inline-code\">Editor</code> react component, we pass this configuration -&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Passing timeline tool to editor",
+            "height": 100,
+            "service": "github",
+            "source": "https://github.com/Walkthroughs/editorjs-react-tool/blob/master/src/Editor.js#L53-L56",
+            "width": 640
+          },
+          "type": "embed"
+        },
+        {
+          "data": { "text": "Start our server and check http://localhost:3000" },
+          "type": "paragraph"
+        },
+        {
+          "data": { "code": "$ yarn start", "language": "plaintext" },
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "Now, when we open the toolbox in the editor, we can see timeline as an option for component&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FxTnMfHYdoYxp?alt=media&amp;token=87c836e8-d77c-47a9-8759-d1b23d2c06d6",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        },
+        {
+          "data": {
+            "text": "Once we click on it, we will be able to create a timeline"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "Block created with our tool",
+            "stretched": false,
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FlJOcunGLCvPs?alt=media&amp;token=8e310149-d309-40a3-8f0f-4622575afbde",
+            "withBackground": false,
+            "withBorder": true
+          },
+          "type": "image"
+        }
+      ],
+      "time": 1608019857806,
+      "uid": "IbPSlvjAmEOH"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Conclusion" }, "type": "header" },
+        {
+          "data": {
+            "text": "With support for custom blocks, you can make the content very rich and engaging. Using React speeds up the development of these blocks."
+          },
+          "type": "paragraph"
+        },
+        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": {
+            "text": "Thank you for checking out this tutorial. If you are using EditorJS in your application, consider supporting them&nbsp;"
+          },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "link": "https://opencollective.com/editorjs",
+            "meta": {
+              "description": "The new block-styled editor that returns clean data output",
+              "image": {
+                "url": "https://images.opencollective.com/editorjs/132a36a/background.png"
+              },
+              "title": "Editor.js - Open Collective"
+            }
+          },
+          "type": "linkTool"
+        },
+        {
+          "data": { "text": "For more learning, you can look into below resources" },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              "Official Website -&nbsp;<a href=\"https://editorjs.io/\">https://editorjs.io/</a>",
+              "Collection of useful things around editorjs -&nbsp;<a href=\"https://github.com/editor-js/awesome-editorjs\">https://github.com/editor-js/awesome-editorjs</a>"
+            ],
+            "style": "ordered"
+          },
+          "type": "list"
+        },
+        { "data": { "style": "mark" }, "type": "delimiter" }
+      ],
+      "time": 1608020513492,
+      "uid": "TVBdgmuGJaGP"
+    }
+  ],
+  "tags": [ "editorjs", "react" ],
+  "title": "Creating a custom editorjs block tool with React",
+  "uid": "QCawSCKwOQLn",
+  "updatedAt": 1639133407303
+}
