@@ -1,0 +1,125 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1639457078289,
+  "description": "",
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Overview23", "uid": "aowkWKgTVycO" },
+          "id": "v6oM8RtmiV",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write overview", "uid": "DVMqamaJnwQC" },
+          "id": "iu67vqO7B8",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "UZkNkzxXzXbk" },
+          "id": "BNUWJMiYzz",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Requirement 1" ],
+            "style": "ordered",
+            "uid": "JIJgrVGShpWa"
+          },
+          "id": "nmYR5BIHuD",
+          "type": "list"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "ElWgUbjjPJtN"
+          },
+          "id": "UA-nggao0U",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Objective 1", "Objective 2" ],
+            "style": "ticked",
+            "uid": "ofSCxgJycQDJ"
+          },
+          "id": "w26s3s-INt",
+          "type": "list"
+        },
+        {
+          "data": { "message": "", "type": "primary", "uid": "rBUGHhcUsBBs" },
+          "id": "46If_VZ4Su",
+          "type": "alert"
+        },
+        {
+          "data": {
+            "caption": "",
+            "uid": "NaGSSBaMReAE",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FmtHLSwFolIVz?alt=media&token=8d99fd19-8250-42af-99cf-20ca5aca8684"
+          },
+          "id": "NMXhCwBFdq",
+          "type": "audionote"
+        }
+      ],
+      "time": 1640260151684,
+      "title": "Introduction",
+      "uid": "VJPxNPStFfnR"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "XjeAXeLoXxqd" },
+          "id": "Q6hWOGvmsI",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "hNouzVbFmDKU" },
+          "id": "sb3_9Pc46t",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 2, "text": "Introduction", "uid": "SXlyUcroXccl" },
+          "id": "RkuVWUb9Z5",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "Our weather data comes from the Dark Sky API. In order to use it, you’ll need to request an API key. It’s easy to use, and free for non-commercial projects.",
+            "uid": "SkufoDOOCgWH"
+          },
+          "id": "_TOnHRBqqU",
+          "type": "paragraph"
+        }
+      ],
+      "esTimeInMin": "2",
+      "time": 1639457302832,
+      "title": "Step 2",
+      "uid": "kCrKRFbxkbEX"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "nFBcAwRQpEvK" },
+          "id": "6glARBb1HU",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "UirnraoCuVSU" },
+          "id": "cOxtr97v-T",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1639930224817,
+      "title": "Step 3",
+      "uid": "fbfBtlPykknj"
+    }
+  ],
+  "tags": [],
+  "title": "Test walkthrough",
+  "uid": "qkQDthqDAECe",
+  "updatedAt": 1640260166521,
+  "versionId": 0
+}
