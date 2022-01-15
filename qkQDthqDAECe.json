@@ -2,13 +2,13 @@
   "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
   "createdAt": 1639457078289,
   "description": "",
-  "sharing": { "mode": "Private", "users": [] },
+  "sharing": { "mode": "Private", "users": [ "nilesh@infinilake.com" ] },
   "status": "Published",
   "steps": [
     {
       "blocks": [
         {
-          "data": { "level": 2, "text": "Overview23", "uid": "aowkWKgTVycO" },
+          "data": { "level": 2, "text": "Overview Updated", "uid": "aowkWKgTVycO" },
           "id": "v6oM8RtmiV",
           "type": "header"
         },
@@ -64,7 +64,7 @@
           "type": "audionote"
         }
       ],
-      "time": 1640260151684,
+      "time": 1642211979502,
       "title": "Introduction",
       "uid": "VJPxNPStFfnR"
     },
@@ -120,6 +120,8 @@
   "tags": [],
   "title": "Test walkthrough",
   "uid": "qkQDthqDAECe",
-  "updatedAt": 1640260166521,
-  "versionId": 0
+  "updatedAt": 1642212347472,
+  "versionId": 4,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1"
 }
