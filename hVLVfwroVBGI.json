@@ -3,36 +3,43 @@
   "createdAt": 1601907513842,
   "description": "A walkthrough of the walkthrough.so ",
   "difficulty": "Beginner",
-  "sharing": { "mode": "Public", "users": [] },
+  "sharing": { "mode": "Private", "users": [] },
   "status": "Published",
   "steps": [
     {
       "blocks": [
         {
-          "data": {
-            "caption": ".",
-            "stretched": true,
-            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FzMztkveSGGbN?alt=media&amp;token=7a7f5dcc-492c-4229-a62e-ad54abecc820",
-            "withBackground": false,
-            "withBorder": false
-          },
-          "type": "image"
+          "data": { "level": 2, "text": "Introduction", "uid": "trpVEaMPtret" },
+          "id": "HIDfmKrJwz",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "header"
         },
-        { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
         {
           "data": {
-            "text": "Thanks for Checking out Walkthrough. This is a walkthrough to share our vision and capabilities of walkthrough.so"
+            "text": "Thanks for Checking out Walkthrough. This is a walkthrough to share our vision and capabilities of walkthrough.so",
+            "uid": "OqtJIicEpfmI"
           },
+          "id": "mS5YZ_dfCG",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
           "data": {
-            "text": "There is always a learning curve involved in doing something new. The internet is full of DIY, tutorials, how-tos kind of instructional articles.&nbsp;There are plenty of tools we use for writing those eg. wikis, blogs, markdowns, or MS/Google docs. But some of these tools and format are not so ideal for both readers and writers of these. That is where, we intend to help.&nbsp;"
+            "text": "There is always a learning curve involved in doing something new. The internet is full of DIY, tutorials, how-tos kind of instructional articles.&nbsp;There are plenty of tools we use for writing those eg. wikis, blogs, markdowns, or MS/Google docs. But some of these tools and format are not so ideal for both readers and writers of these. That is where, we intend to help.&nbsp;",
+            "uid": "CxkDrqbNOBGS"
           },
+          "id": "gtBfpB7GVp",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
-          "data": { "level": 3, "text": "Reader's Challenges:" },
+          "data": {
+            "level": 3,
+            "text": "Reader's Challenges:",
+            "uid": "KWYKhUKdOveJ"
+          },
+          "id": "Da8FLkmVkF",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "header"
         },
         {
@@ -42,18 +49,31 @@
               "Learning new thing can take longer than few minutes and often is not completed in a single sitting. That is why, its important for them to know how much have they finished and time it would require to finish it.&nbsp;",
               "Learner's enthusiasm can wear out quickly if the content is not engaging enough.&nbsp; &nbsp;"
             ],
-            "style": "unordered"
+            "startingIndex": 1,
+            "style": "unordered",
+            "uid": "EkYwsbBBXMuX"
           },
+          "id": "_niTE19dzy",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "list"
         },
         {
           "data": {
-            "text": "All such things increases the perceived complexity in learning new stuff."
+            "text": "All such things increases the perceived complexity in learning new stuff.",
+            "uid": "gvxAmPBhOsHm"
           },
+          "id": "G6uLDYiVqX",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
-          "data": { "level": 3, "text": "Writer's Challenges:" },
+          "data": {
+            "level": 3,
+            "text": "Writer's Challenges:",
+            "uid": "BwXtoZuzUEIk"
+          },
+          "id": "o3ktLtT7tk",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "header"
         },
         {
@@ -62,28 +82,50 @@
               "Writing great and engaging content requires a lot of efforts. The tooling introduces additional complexity e.g. adding code snippets,&nbsp; proper screenshots,&nbsp; attaching files,&nbsp; embedding third party content can be very tiresome.&nbsp;",
               "Tutorials often can have both internal audience like your own team, new hires or partner teams. They can also have external audience like customers, developer community etc. Sharing them securely and privately is difficult.&nbsp;"
             ],
-            "style": "unordered"
+            "startingIndex": 1,
+            "style": "unordered",
+            "uid": "UwHCJdOOSRki"
           },
+          "id": "G1YxD3gDTz",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "list"
         },
         {
           "data": {
-            "text": "All such things generates resistance in creation of great content."
+            "text": "All such things generates resistance in creation of great content.",
+            "uid": "WxJxpDIElnhs"
           },
-          "type": "paragraph"
-        },
-        { "data": { "style": "line" }, "type": "delimiter" },
-        { "data": { "level": 3, "text": "Codelabs:" }, "type": "header" },
-        {
-          "data": {
-            "text": "This is where we found that, the format Googler's created - <a href=\"https://codelabs.developers.google.com/\">Codelab</a> can be useful. In their own definition - <b>Codelabs are interactive instructional tutorials.&nbsp;</b>Google has been writing plenty of new codelabs each day on all of their core technologies - Flutter, Firebase, Tensor-flow, Google Cloud, Android etc. The developer community is liking the experience.&nbsp;"
-          },
+          "id": "qG8_O_kdeP",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
+          "data": { "style": "line", "uid": "ueqadiSGpIoP" },
+          "id": "hgME47OTVJ",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "Codelabs:", "uid": "YqwCrIapRxuO" },
+          "id": "NQVz8Yw70S",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "header"
+        },
+        {
           "data": {
-            "text": "The codelab creators also have open sourced their tools used to generate codelabs. But for people outside of Google, it has been somewhat challenging to use it effectively for below reasons."
+            "text": "This is where we found that, the format Googler's created - <a href=\"https://codelabs.developers.google.com/\">Codelab</a> can be useful. In their own definition - <b>Codelabs are interactive instructional tutorials.&nbsp;</b>Google has been writing plenty of new codelabs each day on all of their core technologies - Flutter, Firebase, Tensor-flow, Google Cloud, Android etc. The developer community is liking the experience.&nbsp;",
+            "uid": "BpVmwXTYFegL"
           },
+          "id": "_odBoCZOoI",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "The codelab creators also have open sourced their tools used to generate codelabs. But for people outside of Google, it has been somewhat challenging to use it effectively for below reasons.",
+            "uid": "buUBOIepEeVN"
+          },
+          "id": "xkONxTtJxW",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
@@ -93,25 +135,45 @@
               "<b>Hosting and Sharing</b>&nbsp;<br>The tool generates static HTML files that you can host yourself. But many times, writers have codelabs that are for specific audience - internal customers, workshop participants. So making them private and sharing requires your own tooling around it.",
               "<b>Customizations</b><br>Customizations with respect to styles and behaviour can be tricky for those not very familiar with Go, Javascript and CSS.&nbsp;"
             ],
-            "style": "unordered"
+            "startingIndex": 1,
+            "style": "unordered",
+            "uid": "UHQGzNNYzuQr"
           },
+          "id": "hfAmGH6j-D",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "list"
         },
         {
           "data": {
-            "text": " So we decided to make <a href=\"https://Walkthrough.so\">Walkthrough.so</a> - a tool for writing great tutorials."
+            "text": " So we decided to make <a href=\"https://Walkthrough.so\">Walkthrough.so</a> - a tool for writing great tutorials.",
+            "uid": "DrlrPFbpzrly"
           },
+          "id": "fCeuDxZfrM",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
         {
-          "data": { "level": 3, "text": "What does Walkthrough.so&nbsp;offer?" },
+          "data": { "style": "line", "uid": "tBUTZrsQCYTQ" },
+          "id": "Ysm_pJV8Tf",
+          "type": "delimiter"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What does Walkthrough.so&nbsp;offer?",
+            "uid": "maInoXeJBSza"
+          },
+          "id": "90IrUEOAIR",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "header"
         },
         {
           "data": {
-            "text": "The focus of <a href=\"https://www.walkthhrough.so\">walkthrough</a>&nbsp;is to simplify the creation of rich codelabs style tutorials and then push this experience further.&nbsp;"
+            "text": "The focus of <a href=\"https://www.walkthhrough.so\">walkthrough</a>&nbsp;is to simplify the creation of rich codelabs style tutorials and then push this experience further.&nbsp;",
+            "uid": "XqABEiYhoBXT"
           },
+          "id": "zDIMwkqQlc",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
@@ -121,46 +183,76 @@
               "<b>Sharing, Hosting, and SEO</b><br>Walkthrough&nbsp;makes it easy to share and host such tutorials for your target audience.&nbsp;<br><br><u class=\"cdx-underline\">Public Sharing</u> - If you want to write codelabs/tutorials, we allow sharing it publicly and turn it into a codelab style blog.&nbsp; Walkthrough takes care of making it SEO and mobile-friendly.<br><br><u class=\"cdx-underline\">Private Sharing</u> - If you want to share such content privately with your customers e.g. onboarding documents, migration guides, etc, Walkthrough allows sharing with an email address or link.",
               "<b>Styling And Customizations</b><br>With a rich block style editor, we make it easy to make codelabs look stylish and allows you to showcase your brand with banner images and colors etc.&nbsp;&nbsp;"
             ],
-            "style": "ordered"
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "sGPpojoXKbYb"
           },
+          "id": "qzpabiJG8t",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "list"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
+        {
+          "data": { "style": "line", "uid": "BwyJYbFftFqZ" },
+          "id": "p7KxePxDrR",
+          "type": "delimiter"
+        },
         {
           "data": {
-            "text": "In the next section, you can learn about what kind of tools&nbsp;<a href=\"https://www.walkthhrough.so/\">walkthrough.so</a>&nbsp;provide for writing beautiful documents."
+            "text": "In the next section, you can learn about what kind of tools&nbsp;<a href=\"https://www.walkthhrough.so/\">walkthrough.so</a>&nbsp;provide for writing beautiful documents.",
+            "uid": "LynsJTXOCaJj"
           },
+          "id": "a1cQSQqRb7",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         }
       ],
       "esTimeInMin": 4,
-      "time": 1608909552637,
+      "time": 1644054959456,
       "uid": "VmJxhaBWtLVu"
     },
     {
       "blocks": [
         {
-          "data": { "level": 2, "text": "WYSIWYG Editor&nbsp;" },
+          "data": {
+            "level": 2,
+            "text": "WYSIWYG Editor&nbsp;",
+            "uid": "KXYWWxpyElbu"
+          },
+          "id": "ZoNa_qkOs4",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "header"
         },
         {
           "data": {
-            "text": "As mentioned before, walkthrough provides your a nice WYSIWYG style block editor."
+            "text": "As mentioned before, walkthrough provides your a nice WYSIWYG style block editor.",
+            "uid": "aqJUiWbhzBfL"
           },
+          "id": "F-PfV6J-rU",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "paragraph"
         },
         {
           "data": {
-            "caption": "Meet the Editor",
+            "caption": "",
             "stretched": false,
-            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FbtNQxlVcMVYd?alt=media&amp;token=1438456f-41a1-4155-976f-2f20f066350f",
+            "uid": "obouOXwujiym",
+            "url": "https://www.walkthrough.so/writing_explain.svg",
             "withBackground": false,
-            "withBorder": false
+            "withBorder": false,
+            "withShadow": false
           },
+          "id": "tQihs81iqp",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
           "type": "image"
+        },
+        {
+          "data": { "text": "", "uid": "MQGHiNhSLLtJ" },
+          "id": "0ipyFm6E1Q",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
         }
       ],
-      "time": 1608882610801,
+      "time": 1644055030949,
       "uid": "RIwdxJzrXjYQ"
     },
     {
@@ -668,5 +760,8 @@
   "tags": [ "walkthrough", "demo" ],
   "title": "A Walkthrough of walkthrough.so",
   "uid": "hVLVfwroVBGI",
-  "updatedAt": 1615958285829
+  "updatedAt": 1644055035867,
+  "versionId": 6,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1"
 }
