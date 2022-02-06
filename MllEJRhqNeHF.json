@@ -1,0 +1,145 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1644148914149,
+  "description": "",
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Overview", "uid": "LsWWACishgfg" },
+          "id": "XjlswHs-8_",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write overview", "uid": "ytnjyLBMRSdZ" },
+          "id": "pRlrM9CPAZ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "HKDNcvYjgTVJ" },
+          "id": "P17g3VcOwH",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Requirement 1" ],
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "SielBTuQABNs"
+          },
+          "id": "cXLm_XrjiV",
+          "type": "list"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "ZwvATCuMMxMD"
+          },
+          "id": "SXhlCqEiCv",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Objective 1" ],
+            "startingIndex": 1,
+            "style": "ticked",
+            "uid": "LkjhZFHMQypb"
+          },
+          "id": "SZzApcLcwF",
+          "type": "list"
+        },
+        {
+          "data": { "text": "", "uid": "rbsGCnNXjleT" },
+          "id": "pCrsBmhqTJ",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "This is nilesh's private walkthrough",
+            "uid": "UhTYLeMYnilE"
+          },
+          "id": "eqoMAfdxc8",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "ZzzEYTQIftcL" },
+          "id": "3RFsVKzmtr",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "wBAzxckpBYFZ" },
+          "id": "akmconiOBm",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "UQuIRFvQEjFG" },
+          "id": "hYvVW0oKk7",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "yCJJDrHbMOxE" },
+          "id": "reYaMHQGVx",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "YSNgqeWSCMme" },
+          "id": "xjSs_DMIDE",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "WjIaMNaKjuQZ" },
+          "id": "gOkXxQJwtP",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "VcUoDZssPePT" },
+          "id": "aFmE7y3e3L",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "FJDaGKYngaaR" },
+          "id": "19AWKQE-bI",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "yeiymSQlLegX" },
+          "id": "CIoMQUDmva",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "UKEFXsiRzWOZ" },
+          "id": "ukcEvmWqsT",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "UJZnflEJyNVL" },
+          "id": "YnjU67tBEH",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "AHangoyTyEDP" },
+          "id": "cFD6_qaDEM",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "NkWpAfqxOodv" },
+          "id": "097aXrSyJt",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1644148931328,
+      "title": "Introduction",
+      "uid": "VNYiskxDmUlM"
+    }
+  ],
+  "tags": [],
+  "title": "Private Walkthrough",
+  "uid": "MllEJRhqNeHF",
+  "updatedAt": 1644148938496,
+  "versionId": 5,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1"
+}
