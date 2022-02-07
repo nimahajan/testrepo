@@ -2,7 +2,8 @@
   "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
   "createdAt": 1644148914149,
   "description": "",
-  "sharing": { "mode": "Private", "users": [] },
+  "difficulty": null,
+  "sharing": { "mode": "Private", "users": [ "nilesh@infinilake.com" ] },
   "status": "Published",
   "steps": [
     {
@@ -138,8 +139,8 @@
   "tags": [],
   "title": "Private Walkthrough",
   "uid": "MllEJRhqNeHF",
-  "updatedAt": 1644148938496,
-  "versionId": 5,
+  "updatedAt": 1644207379955,
+  "versionId": 6,
   "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
   "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1"
 }
