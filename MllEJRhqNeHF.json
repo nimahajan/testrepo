@@ -5,7 +5,11 @@
   "difficulty": null,
   "sharing": {
     "mode": "Private",
-    "users": [ "nilesh@infinilake.com", "nilesh123mahajan@gmail.com" ]
+    "users": [
+      "nilesh@infinilake.com",
+      "nilesh123mahajan@gmail.com",
+      "nilesh@hapuslabs.com"
+    ]
   },
   "status": "Published",
   "steps": [
@@ -142,8 +146,8 @@
   "tags": [],
   "title": "Private Walkthrough",
   "uid": "MllEJRhqNeHF",
-  "updatedAt": 1644210590306,
-  "versionId": 7,
+  "updatedAt": 1644211135540,
+  "versionId": 8,
   "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
   "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1"
 }
