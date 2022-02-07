@@ -8,44 +8,75 @@
   "steps": [
     {
       "blocks": [
-        { "data": { "level": 2, "text": "Introduction" }, "type": "header" },
+        {
+          "data": { "level": 2, "text": "Introduction", "uid": "bZufiaFTkgRb" },
+          "id": "VZ7mTD5v5I",
+          "type": "header"
+        },
         {
           "data": {
-            "text": "<a href=\"https://nextjs.org/\">NextJS</a> is a popular framework to write react web applications. It has amazing features like Static Site Generation (SSG) and Server Side Rendering to make your web applications extremely fast and gives a boost to your SEO.&nbsp; It comes correctly configured with all the bells and whistles needed to make your react application production-ready.&nbsp;"
+            "text": "<a href=\"https://nextjs.org/\">NextJS</a> is a popular framework to write react web applications. It has amazing features like Static Site Generation (SSG) and Server Side Rendering to make your web applications extremely fast and gives a boost to your SEO.&nbsp; It comes correctly configured with all the bells and whistles needed to make your react application production-ready.&nbsp;",
+            "uid": "mNDWuZuBcYSA"
           },
+          "id": "A2yLaUnei3",
           "type": "paragraph"
         },
         {
           "data": {
-            "text": "But deploying an app to cloud environment requires quite a lot of configuration and learning new things. This tutorial guides you on how you can deploy NextJS application to a <a href=\"https://kubernetes.io/\">Kubernetes</a> Cluster on <a href=\"https://cloud.google.com/\">Google Cloud Platform</a> and then point your custom domain name to it."
+            "text": "But deploying an app to cloud environment requires quite a lot of configuration and learning new things. This tutorial guides you on how you can deploy NextJS application to a <a href=\"https://kubernetes.io/\">Kubernetes</a> Cluster on <a href=\"https://cloud.google.com/\">Google Cloud Platform</a> and then point your custom domain name to it.",
+            "uid": "KtIjGjjOcUiF"
           },
+          "id": "m5OfTxyvDq",
           "type": "paragraph"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
-        { "data": { "level": 3, "text": "Prerequisites" }, "type": "header" },
+        {
+          "data": { "style": "line", "uid": "bWPcfCnSnuHA" },
+          "id": "N5JRlX5vkb",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "Prerequisites", "uid": "oOyUoybiquYJ" },
+          "id": "odY8SispBg",
+          "type": "header"
+        },
         {
           "data": {
             "items": [
               "<b>Domain Name</b>&nbsp;<br>In the last stage, we will pointing your custom domain name to your NextJS application hosted on Google Cloud Platform.&nbsp; You can buy domain names from various sites like <a href=\"http://www.namecheap.com\">NameCheap</a>, Or <a href=\"https://domains.google/\">Domain.Google</a>.&nbsp;<br>",
               "<b>Google Cloud Account</b><br>You also need to have account created on <a href=\"https://console.cloud.google.com/\">Google Cloud Console</a> with billing account setup. If you don't have one, you can create <a href=\"https://cloud.google.com/?\">here</a>.&nbsp;<br><br>"
             ],
-            "style": "ticked"
+            "startingIndex": 1,
+            "style": "ticked",
+            "uid": "scwvEbLEBtKI"
           },
+          "id": "pi_EdJj7um",
           "type": "list"
         },
         {
           "data": {
             "message": "<b>Running on Google Cloud may incur charges</b>.&nbsp;<br><span style=\"font-size: 1rem;\"><br>Please make sure you follow instructions in last step to clean up your cluster after you are done.</span>",
-            "type": "danger"
+            "type": "danger",
+            "uid": "VBuzDOIIrQUM"
           },
+          "id": "oE4_tTU7YJ",
           "type": "alert"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
-        { "data": { "level": 4, "text": "What you need?" }, "type": "header" },
+        {
+          "data": { "style": "line", "uid": "uSTONVlmOadK" },
+          "id": "dJ0mvRUVDi",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 4, "text": "What you need?", "uid": "TNUdFMwXuuQt" },
+          "id": "9LeusSFHgm",
+          "type": "header"
+        },
         {
           "data": {
-            "text": "Before we begin, we need below dependencies installed on your machine -"
+            "text": "Before we begin, we need below dependencies installed on your machine -",
+            "uid": "cMdOoHrAneIJ"
           },
+          "id": "tpk97DuPzk",
           "type": "paragraph"
         },
         {
@@ -56,43 +87,72 @@
               "<a href=\"https://docs.docker.com/docker-for-windows/install/\">Docker</a>",
               "<a href=\"http://Kubectl\">Kubectl</a>"
             ],
-            "style": "ordered"
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "pPLDqRXslWsE"
           },
+          "id": "bjtRau8n9F",
           "type": "list"
         },
         {
           "data": {
-            "text": "To confirm if your environment setup is correct, you can run simple version commands on your terminal as shown below"
+            "text": "To confirm if your environment setup is correct, you can run simple version commands on your terminal as shown below",
+            "uid": "CWuCVgKymEQN"
           },
+          "id": "ahjoey96TI",
           "type": "paragraph"
         },
         {
           "data": {
-            "code": "$ npm version\n// ... some version information \n\n$ gcloud version\n// ... some version information \n\n$ docker version\n// ... some version information \n\n$ kubectl version\n// ... some version information ",
-            "language": "bash"
+            "tabs": [
+              {
+                "code": "$ npm version\n// ... some version information \n\n$ gcloud version\n// ... some version information \n\n$ docker version\n// ... some version information \n\n$ kubectl version\n// ... some version information ",
+                "language": "bash",
+                "tabName": "bash"
+              }
+            ],
+            "uid": "EGxFtWDqpYnu"
           },
+          "id": "c9dfVipBBD",
           "type": "code"
         },
         {
           "data": {
-            "text": "If any of the dependencies are missing, please use the links given to setup your environment properly."
+            "text": "If any of the dependencies are missing, please use the links given to setup your environment properly.",
+            "uid": "IDFWxNeOzNNn"
           },
+          "id": "cD--3Dhvjy",
           "type": "paragraph"
         },
-        { "data": { "style": "line" }, "type": "delimiter" },
         {
-          "data": { "level": 3, "text": "Expected Output" },
+          "data": { "style": "line", "uid": "yOFXASGNmRxp" },
+          "id": "D8uKvZndjA",
+          "type": "delimiter"
+        },
+        {
+          "data": { "level": 3, "text": "Expected Output", "uid": "jHoTdDXYamcA" },
+          "id": "KPlj3_KTqX",
           "type": "header"
         },
         {
           "data": {
-            "text": "At the end of this codelab, you would be able to get your web application hosted on your custom domain name and served by a kubernetes cluster hosted in GCP"
+            "text": "At the end of this codelab, you would be able to get your web application hosted on your custom domain name and served by a kubernetes cluster hosted in GCP",
+            "uid": "RsHpLDHhUyrW"
           },
+          "id": "Wvt6-nSIYJ",
           "type": "paragraph"
         },
-        { "data": { "level": 3, "text": "Source Code" }, "type": "header" },
         {
-          "data": { "text": "The entire source code is available here&nbsp;" },
+          "data": { "level": 3, "text": "Source Code", "uid": "MlAanvrrGuTb" },
+          "id": "LGHox7epX-",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "The entire source code is available here&nbsp;",
+            "uid": "dlnKeZLiXjLQ"
+          },
+          "id": "vCKzn0im_4",
           "type": "paragraph"
         },
         {
@@ -104,94 +164,158 @@
                 "url": "https://avatars1.githubusercontent.com/u/2060769?s=400&amp;v=4"
               },
               "title": "nimahajan/codelab-nextjs-blog"
-            }
+            },
+            "uid": "TDfAFMznhfos"
           },
+          "id": "jRX6JoLGVh",
           "type": "linkTool"
         },
-        { "data": { "text": "Let's get Started !" }, "type": "paragraph" }
+        {
+          "data": { "text": "Let's get Started !", "uid": "whzioGPRrGhy" },
+          "id": "rdoWgZpiky",
+          "type": "paragraph"
+        }
       ],
       "esTimeInMin": 3,
-      "time": 1614242788812,
+      "time": 1644164972475,
       "uid": "HHyaDDKiqxin"
     },
     {
       "blocks": [
         {
-          "data": { "level": 2, "text": "Create Simple NextJS Application" },
+          "data": {
+            "level": 2,
+            "text": "Create Simple NextJS Application",
+            "uid": "IQIZLAQVNqly"
+          },
+          "id": "K_krxMn5yW",
           "type": "header"
         },
         {
-          "data": { "text": "Let's create a simple NextJS application.&nbsp;" },
+          "data": {
+            "text": "Let's create a simple NextJS application.&nbsp;",
+            "uid": "WOUlxpwZCUSK"
+          },
+          "id": "sHUkpEgLvT",
           "type": "paragraph"
         },
         {
           "data": {
             "message": "<div style=\"\"><b style=\"\">Note&nbsp;</b></div><div style=\"\"><br style=\"\"></div>If you are familiar with NextJS and already have a functional application, you can skip this step.",
-            "type": "primary"
+            "type": "primary",
+            "uid": "zSjcpDnxkEcf"
           },
+          "id": "20xXfLLhUs",
           "type": "alert"
         },
         {
-          "data": { "level": 4, "text": "a. New NextJS Application" },
-          "type": "header"
-        },
-        {
-          "data": { "text": "To create your first NextJS application,&nbsp;" },
-          "type": "paragraph"
-        },
-        {
           "data": {
-            "code": "$ npx create-next-app nextjs-blog --use-npm --example \\ \n\"https://github.com/vercel/next-learn-starter/tree/master/learn-starter\"",
-            "language": "none"
+            "level": 4,
+            "text": "a. New NextJS Application",
+            "uid": "iyZevIxYmmpw"
           },
-          "type": "code"
-        },
-        {
-          "data": {
-            "text": "This first instruction will take a few seconds to finish.&nbsp; It downloads an existing demo example from NextJS Github directory into&nbsp;<code class=\"inline-code\">nextjs-blog</code> directory.&nbsp;"
-          },
-          "type": "paragraph"
-        },
-        {
-          "data": { "code": "$ cd nextjs-blog", "language": "none" },
-          "type": "code"
-        },
-        {
-          "data": { "level": 4, "text": "b. Verify Your Application" },
+          "id": "fSH95VUFZs",
           "type": "header"
         },
         {
           "data": {
-            "text": "To verify if everything is working correctly, run <code class=\"inline-code\">npm run dev</code> and you can see the message like below -"
+            "text": "To create your first NextJS application,&nbsp;",
+            "uid": "DwHKWhfbLFet"
           },
+          "id": "KJoU56Abaz",
           "type": "paragraph"
         },
         {
           "data": {
-            "code": "$ npm run dev\n\n> nextjs-blog@0.1.0 dev /Users/nilesh/work/codelabs/helloworld/nextjs-blog\n> next dev\n\nready - started server on http://localhost:3000\nevent - compiled successfully\nevent - build page: /next/dist/pages/_error\nwait  - compiling...\nevent - compiled successfully\nevent - build page: /\nwait  - compiling...\nevent - compiled successfully",
-            "language": "none"
+            "tabs": [
+              {
+                "code": "$ npx create-next-app nextjs-blog --use-npm --example \\ \n\"https://github.com/vercel/next-learn-starter/tree/master/learn-starter\"",
+                "language": "none",
+                "tabName": "none"
+              }
+            ],
+            "uid": "ijfEWdXsEXij"
           },
+          "id": "MGK0Zxz-yZ",
           "type": "code"
         },
         {
           "data": {
-            "text": "If you visit,&nbsp;<a href=\"http://localhost:3000\">http://localhost:3000</a>, you can see a demo page like below -"
+            "text": "This first instruction will take a few seconds to finish.&nbsp; It downloads an existing demo example from NextJS Github directory into&nbsp;<code class=\"inline-code\">nextjs-blog</code> directory.&nbsp;",
+            "uid": "yvbxZNbYoBWt"
           },
+          "id": "ysKhztJKrX",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "$ cd nextjs-blog",
+                "language": "none",
+                "tabName": "none"
+              }
+            ],
+            "uid": "rjQoFuylbLyw"
+          },
+          "id": "71i_EVkmrG",
+          "type": "code"
+        },
+        {
+          "data": {
+            "level": 4,
+            "text": "b. Verify Your Application",
+            "uid": "DHXNMXvEmFgt"
+          },
+          "id": "XzaGqmurQS",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "To verify if everything is working correctly, run <code class=\"inline-code\">npm run dev</code> and you can see the message like below -",
+            "uid": "tJxzzyHXlmTA"
+          },
+          "id": "8rneTAUFcv",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "$ npm run dev\n\n> nextjs-blog@0.1.0 dev /Users/nilesh/work/codelabs/helloworld/nextjs-blog\n> next dev\n\nready - started server on http://localhost:3000\nevent - compiled successfully\nevent - build page: /next/dist/pages/_error\nwait  - compiling...\nevent - compiled successfully\nevent - build page: /\nwait  - compiling...\nevent - compiled successfully",
+                "language": "none",
+                "tabName": "none"
+              }
+            ],
+            "uid": "fSbYkYfiQvci"
+          },
+          "id": "-S1SF3qAvF",
+          "type": "code"
+        },
+        {
+          "data": {
+            "text": "If you visit,&nbsp;<a href=\"http://localhost:3000\">http://localhost:3000</a>, you can see a demo page like below -",
+            "uid": "dNmTVfYyUcFc"
+          },
+          "id": "ZeDr8VUFg5",
           "type": "paragraph"
         },
         {
           "data": {
             "caption": "Screenshot of our demo application page",
             "stretched": false,
+            "uid": "isTpcwnzLoms",
             "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/public%2Fkodelab%2Fdemo%2FrjJUwAbAAhPv?alt=media&amp;token=81b6aa08-ab40-473e-9308-676483663e82",
             "withBackground": false,
-            "withBorder": true
+            "withBorder": true,
+            "withShadow": false
           },
+          "id": "9e_cTwzg6g",
           "type": "image"
         }
       ],
       "esTimeInMin": 4,
-      "time": 1608097124321,
+      "time": 1644218763493,
       "uid": "WBDnyKcaYaWz"
     },
     {
@@ -259,7 +383,7 @@
         }
       ],
       "esTimeInMin": 4,
-      "time": 1608097129596,
+      "time": 1615961587879,
       "uid": "awfCERWrizHX"
     },
     {
@@ -350,7 +474,7 @@
         }
       ],
       "esTimeInMin": 7,
-      "time": 1607351984521,
+      "time": 1620024143766,
       "uid": "NugXVpftGnGK"
     },
     {
@@ -393,7 +517,7 @@
           "type": "code"
         }
       ],
-      "time": 1607678893348,
+      "time": 1620024144954,
       "uid": "BHavltmXlQje"
     },
     {
@@ -477,7 +601,7 @@
           "type": "image"
         }
       ],
-      "time": 1608097143352,
+      "time": 1620024145520,
       "uid": "WTDqfBjLAqmu"
     },
     {
@@ -544,7 +668,7 @@
         }
       ],
       "esTimeInMin": 3,
-      "time": 1607678897860,
+      "time": 1620024146753,
       "uid": "KQPBGnNiyQmh"
     },
     {
@@ -724,7 +848,7 @@
           "type": "paragraph"
         }
       ],
-      "time": 1608097148282,
+      "time": 1620024149097,
       "uid": "iGeokmUItnXC"
     },
     {
@@ -863,5 +987,8 @@
   "tags": [ "GCP", "Kubernetes", "Docker", "React", "NextJS" ],
   "title": "How to deploy NextJS app to Kubernetes Cluster in GCP with Custom Domain?",
   "uid": "FHQPWEGGWSPT",
-  "updatedAt": 1614242799685
+  "updatedAt": 1644218774260,
+  "versionId": 2,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1"
 }
