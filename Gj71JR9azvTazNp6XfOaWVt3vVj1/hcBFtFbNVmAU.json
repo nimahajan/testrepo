@@ -1,0 +1,229 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1644078266239,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "mode": "Private", "users": [ "nilesh@infinilake.com" ] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Overview", "uid": "jRUmVeKoiWRY" },
+          "id": "_HanzXFBeY",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "One of the core objectives of Digital Transformation is to substantially improve the productivity across the business. Productivity is measured in terms of financial performance, increased speed and throughput in all parts of their businesses, and reduction in NVA (non-value-added) time, and efforts. To achieve productivity goals, there is a clear need to rapidly implement intuitive end-user centric 'For-purpose' Applications and provide on-demand 'visibility' across business processes with A/BI capabilities. These apps need to access contextual data from multiple systems to enable end users carry out their end-to-end business transactions.",
+            "uid": "aTykHjgsEgWe"
+          },
+          "id": "Nm7MBdanIZ",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "UIhldyWrKcFn" },
+          "id": "ptnccYcjg2",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Requirement 1", "Requirement 2" ],
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "qzOPiegkvgOi"
+          },
+          "id": "xDPsp695N-",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "list"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "RjwRhpUAAcZm"
+          },
+          "id": "OOmLdIj1JN",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Objective 1", "Objective 2" ],
+            "startingIndex": 1,
+            "style": "ticked",
+            "uid": "tQnkLPsAeBiT"
+          },
+          "id": "U0nW-XeRCX",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "list"
+        },
+        {
+          "data": {
+            "message": "For this tutorial, you need XYZ license.",
+            "type": "danger",
+            "uid": "AJpPciFqTOhn"
+          },
+          "id": "63v-Qb4N7s",
+          "type": "alert"
+        },
+        {
+          "data": {
+            "caption": "Architecture Overview",
+            "stretched": false,
+            "uid": "aBhqEinevuNG",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FHXYUKNFlgbSU?alt=media&amp;token=e0d89260-58c3-4afa-898a-e550b9d546d1",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "U5Q-BEQ5DS",
+          "type": "image"
+        },
+        {
+          "data": {
+            "caption": "",
+            "uid": "apLrZDOhnwTk",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FNazTPVVQKFhS?alt=media&token=8c636e8d-1ea2-4794-8c4e-6ed0dc4fe459"
+          },
+          "id": "ml9crZ5dvT",
+          "type": "audionote"
+        },
+        {
+          "data": { "text": "", "uid": "GnNjsKIvfgWh" },
+          "id": "8WDMuw3xEf",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "vEGJhPHQlRtx" },
+          "id": "Uhfpv-WPVY",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "hcqGGEEPhYEH" },
+          "id": "neloejX83F",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "OdDGgeIFGtPq" },
+          "id": "pvn5Q0aBjC",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "ZWDhugWuQtmp" },
+          "id": "Z8iYb2Qpcm",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "uOuQtaYLBgvw" },
+          "id": "h_LFrJtoTj",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "NohLNIBiclow" },
+          "id": "clMAz27sfx",
+          "tunes": { "commentsBlock": { "commentUid": "" } },
+          "type": "paragraph"
+        }
+      ],
+      "time": 1644134110191,
+      "title": "Introduction",
+      "uid": "WcWvObijxWPS"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "lbodqrjJRqBQ" },
+          "id": "KS5LukW51l",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "tKtBvZDmMMSZ" },
+          "id": "R-LryzpWpP",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "RQkYigKlZgxY" },
+          "id": "IGY_HD6bzQ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "yjtAyRTxtjlW" },
+          "id": "WSQP0SrBu-",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "xdUSinHifWFi" },
+          "id": "cEr-0Y07_V",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "iBbxHJgnblOa" },
+          "id": "DC3UEnDRIu",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "YPTFufimuYWo" },
+          "id": "Lm0HB7cWDF",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "CToVENLaMuPE" },
+          "id": "v073nD0La7",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "genNUAPBOOVM" },
+          "id": "GwclHET3S4",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "ZSwUwAFGPBli" },
+          "id": "ueD7nNBlsB",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "DIPVdQwmKxSP" },
+          "id": "JJhzT6R1tP",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "BNDNKgVzTFjb" },
+          "id": "6cqioe9rwp",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "cbFuLPpSYMVA" },
+          "id": "5hiFspUFoR",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "fdeASKMiUUcj" },
+          "id": "Tg5k7ZasCE",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1644132704959,
+      "title": "Untitled",
+      "uid": "nVyKkUaeYzjF"
+    }
+  ],
+  "tags": [],
+  "title": "Demo Walkthrough",
+  "uid": "hcBFtFbNVmAU",
+  "updatedAt": 1644556673453,
+  "versionId": 50,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null
+}
