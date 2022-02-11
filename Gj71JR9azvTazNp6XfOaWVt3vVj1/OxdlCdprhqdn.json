@@ -1,0 +1,128 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1644556491512,
+  "description": "",
+  "sharing": { "mode": "Private", "users": [ "nilesh@infinilake.com" ] },
+  "status": "Published",
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Overview", "uid": "fhYbjkdePKlR" },
+          "id": "4SEYhW1Ki9",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write overview", "uid": "BGUscjnVuMmH" },
+          "id": "Q_IFC5oCIJ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "gKQpskHDQNeX" },
+          "id": "N8peEYBstU",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Requirement 1" ],
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "kEqDlrHtCVaM"
+          },
+          "id": "W4VTxXPMyq",
+          "type": "list"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "rkiOXcyQRaAE"
+          },
+          "id": "z2BJVgAV8T",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Objective 1" ],
+            "startingIndex": 1,
+            "style": "ticked",
+            "uid": "qUpOTtbhbHbo"
+          },
+          "id": "ExaOOojDNR",
+          "type": "list"
+        },
+        {
+          "data": { "text": "", "uid": "GjNpaWZOahGg" },
+          "id": "2O54_9hrvp",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "AQJoYaYwtlvI" },
+          "id": "jsZU7S0TCB",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "dxIrlIUtNFwp" },
+          "id": "fuaFZMFXuy",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "sBUnHfkkVsMD" },
+          "id": "Y9Fc6p_1Qk",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "PFwIhtZTacIS" },
+          "id": "cVzqBZ6-jp",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "FAcnZxRQveHx" },
+          "id": "eCKHaO7I2d",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "whGRuLcHNOXb" },
+          "id": "5k8B-iLrBA",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "AzyVWXKqGRpE" },
+          "id": "_nVHUPLuR-",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "HzSOrZXfcZGc" },
+          "id": "fIn1MZt530",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "BwZEngdLpcFB" },
+          "id": "QjzhzRGaIY",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "jfustGAZoXMH" },
+          "id": "1-TPUU6pYW",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "EQqYidBpMkJo" },
+          "id": "Y_xHpS8BDd",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1644556498991,
+      "title": "Introduction",
+      "uid": "APCcghwejzSN"
+    }
+  ],
+  "tags": [],
+  "title": "Sharing walkthrough",
+  "uid": "OxdlCdprhqdn",
+  "updatedAt": 1644556535674,
+  "versionId": 4,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null
+}
