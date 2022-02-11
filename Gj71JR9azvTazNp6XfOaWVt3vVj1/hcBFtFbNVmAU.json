@@ -3,7 +3,10 @@
   "createdAt": 1644078266239,
   "description": "",
   "difficulty": null,
-  "sharing": { "mode": "Private", "users": [ "nilesh@infinilake.com" ] },
+  "sharing": {
+    "mode": "Private",
+    "users": [ "nilesh@infinilake.com", "nilesh123mahajan@gmail.com" ]
+  },
   "status": "Published",
   "prerenderedHtmlUrl": null,
   "steps": [
@@ -221,9 +224,9 @@
   "tags": [],
   "title": "Demo Walkthrough",
   "uid": "hcBFtFbNVmAU",
-  "updatedAt": 1644556673453,
-  "versionId": 50,
+  "updatedAt": 1644556721036,
+  "versionId": 51,
   "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
   "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
-  "backupSha": null
+  "backupSha": "f6ed9161b6c2fc74a211f427472e4d14c7ac989d"
 }
