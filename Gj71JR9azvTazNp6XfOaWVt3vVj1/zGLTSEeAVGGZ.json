@@ -1,0 +1,116 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1608025103950,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Steps", "uid": "aWRVAyMRwYPU" },
+          "id": "5vH1a3k4rz",
+          "type": "header"
+        },
+        {
+          "data": {
+            "text": "1. Go to URL - <a href=\"https://github.com/apps/walkthrough-backup\">Github</a>",
+            "uid": "NmesXKCopZTV"
+          },
+          "id": "ST6KRBP1Jq",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "uid": "GXomaNveBzRD",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FhvyKqFALJJfs?alt=media&amp;token=21633cfc-f40e-4270-8bae-267c42129d94",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "LCioEOMV7H",
+          "type": "image"
+        },
+        {
+          "data": { "text": "2.", "uid": "RYvqxgzHmKPc" },
+          "id": "J90zK2BQr1",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "uid": "yCzvHJqaPiHt",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FwdzcAHLrewIe?alt=media&amp;token=cdda0a87-78c2-44b3-b971-05fbaa5fbdf6",
+            "withBackground": true,
+            "withBorder": true,
+            "withShadow": false
+          },
+          "id": "Iivpa6Lsoy",
+          "type": "image"
+        },
+        {
+          "data": {
+            "caption": "",
+            "stretched": false,
+            "uid": "wiwRwxlUdcZN",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FerBQXAvrhmiy?alt=media&amp;token=e91df85c-7dcd-4173-8f65-85b61ea42054",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "fWoaUhSR0B",
+          "type": "image"
+        },
+        {
+          "data": { "text": "", "uid": "qRNNyovSqsSQ" },
+          "id": "YdSCkfE7p7",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1644467843256,
+      "uid": "YMsZcEtHdNWI"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "EUCZhOOVakyh" },
+          "id": "Giv206LWq3",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "GEXvCOJzfqzV" },
+          "id": "0szTkYCHWx",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "LEt me see if this editor is still painful to work with or not. The jungle jungle baat Chali hai pata chala hai is a great song.&nbsp;",
+            "uid": "ViatgoiBkZjS"
+          },
+          "id": "YSHoN-D_sf",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "MUSppcGBSTAB" },
+          "id": "t2HPNLYakQ",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1644468032461,
+      "uid": "hrvVGvHRPTBV"
+    }
+  ],
+  "tags": [],
+  "title": "Enable Github Backup for Walkthrough.so",
+  "uid": "zGLTSEeAVGGZ",
+  "updatedAt": 1644555948311,
+  "versionId": 17,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null
+}
