@@ -1,0 +1,292 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1645441738549,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Overview", "uid": "cZxKKCwqcdLa" },
+          "id": "VpMpUjK70r",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write overview", "uid": "VIQjUUWTlQYz" },
+          "id": "8FmobVlB_1",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 3, "text": "What you will need?", "uid": "KHNTfOdlwizb" },
+          "id": "rn2AJqID45",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [ "Requirement 1" ],
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "GluREhNLOybR"
+          },
+          "id": "8eGIyvpEVx",
+          "type": "list"
+        },
+        {
+          "data": {
+            "level": 3,
+            "text": "What you will learn?",
+            "uid": "qnjzuGSCQfHb"
+          },
+          "id": "cqXNXwtuK4",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              "We need to give space to the recent initiatives undertaken by parties which seek to diffuse tensions. In this context, we welcome the intense efforts underway, including through the Trilateral Contact Group and under the Normandy format. "
+            ],
+            "startingIndex": 1,
+            "style": "unordered",
+            "uid": "qsJJyIJNWlvn"
+          },
+          "id": "ed9BpJVWFZ",
+          "type": "list"
+        },
+        {
+          "data": {
+            "text": "We need Parties to exert greater efforts to bridge divergent interests. We cannot afford to have a military escalation,\" <u class=\"cdx-underline\">TS Tirumurti</u>, India's Permanent Representative to United Nations, said at the UN Security Council Meeting.",
+            "uid": "hINTjrCCAdJw"
+          },
+          "id": "MJfOk2r6nr",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [ { "code": "", "language": "none", "tabName": "Code" } ],
+            "uid": "btnBnQmlOHVW"
+          },
+          "id": "8zlQCg6h9i",
+          "type": "code"
+        },
+        {
+          "data": { "text": "", "uid": "taglHgilzkhx" },
+          "id": "d1lwm1l-WL",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "content": {
+              "0": [ "12", "12", "23", "" ],
+              "1": [ "1", "2", "3", "" ],
+              "rowCount": 2
+            },
+            "withHeadings": false
+          },
+          "id": "ZRBs1HoQlY",
+          "type": "table"
+        },
+        {
+          "data": {
+            "message": "<div>Wow</div>",
+            "type": "success",
+            "uid": "LpZRxKCmQNyd"
+          },
+          "id": "HK4bGcRZur",
+          "type": "alert"
+        },
+        {
+          "data": { "text": "", "uid": "JpMmDyTGOFpa" },
+          "id": "6_O5lP35rn",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "zfspOBXurzPG" },
+          "id": "VhQMO13ss5",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "VMTPNSGaYxpf" },
+          "id": "cqiU9phkbZ",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1646562667274,
+      "title": "Introduction",
+      "uid": "QfixxqiDlPYQ"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "FLqrEDFnhooF" },
+          "id": "qNGhRp7nVU",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "AFqGeJGDKXRt" },
+          "id": "QfhDZbCzHl",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "Now run below scripts", "uid": "BppYwcHouYhP" },
+          "id": "cBLIB8oPGV",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "bCDTsHLUzNlN" },
+          "id": "P6WNPJ0eGH",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "$ curl -h http://localhost:9090/{{customer_id2}}",
+                "language": "none",
+                "tabName": "Code"
+              }
+            ],
+            "uid": "JyibHTzgohSh"
+          },
+          "id": "vk7cDqKcRo",
+          "type": "code"
+        },
+        {
+          "data": { "text": "", "uid": "CyXbjLjRphbd" },
+          "id": "Liasl5tlKd",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "mNIsyjIOINeL" },
+          "id": "uDlNZhQvEu",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "tpRwRHhjaRjL" },
+          "id": "_YFWWCB1O6",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "JgpAjiPJtIAp" },
+          "id": "sjglN685aE",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "bYzfewukFRpN" },
+          "id": "WfEpm4ET4P",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "vszZWflnNZOJ" },
+          "id": "4ckPapiOAX",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "PRBAUwENzUlQ" },
+          "id": "7Fn_wrUDCO",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "eaeuWKcOYEcj" },
+          "id": "rzmR34GmMM",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "sUyqvFKKgiuW" },
+          "id": "a3lljqaUae",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1646539718644,
+      "title": "Untitled",
+      "uid": "YSwByKsRzKlm"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "EEdQvvGobTLW" },
+          "id": "KbaEiYd8mX",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "yWeurdvImCBk" },
+          "id": "2N3BGn0E1P",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "KzpHGfzfwcTA" },
+          "id": "xOjbftNY8N",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "zfBhJCHTmjSA" },
+          "id": "qJRjfe7XZT",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "QgdwDVZPjOiR" },
+          "id": "WEUKA_QNRQ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "OUzzEPzptsVB" },
+          "id": "Fyz6wh-gEV",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "nKwFhqGsFDCg" },
+          "id": "0EyDpZDDr8",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "XvkYLsjrVLaU" },
+          "id": "D6St2NKQGG",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "EpoFIvPAtbmv" },
+          "id": "d3hz2Lxvkq",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "VFmjaxjReDgC" },
+          "id": "Iuv3T4xmLI",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "LYaqFjCIwNKw" },
+          "id": "ChKpJIpgTb",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "MAGEcndrypxg" },
+          "id": "1AW21LzsGC",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "OgWlGsXtgGIV" },
+          "id": "5BgD5hrah3",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "caUqwHhOXJlx" },
+          "id": "_PXEqIYGI5",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1645441808669,
+      "title": "Untitled",
+      "uid": "pSEUQRuLLKxE"
+    }
+  ],
+  "tags": [],
+  "title": "Trial Walkthrough",
+  "uid": "SFvFfxnFkEwg",
+  "updatedAt": 1646562677080,
+  "versionId": 39,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null
+}
