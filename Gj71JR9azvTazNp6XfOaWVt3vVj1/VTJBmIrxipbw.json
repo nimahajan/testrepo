@@ -1,0 +1,204 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1673144344441,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "mode": "Private", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Getting Started", "uid": "dGGiLuqjNsSG" },
+          "id": "ABqi7gdMNx",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write introduction", "uid": "XNSdAnphIAie" },
+          "id": "0aiA6-kAOL",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [
+              { "code": "Item 1", "language": "none", "tabName": "Code" },
+              { "code": "items 2", "language": "diff", "tabName": "item 2" }
+            ],
+            "uid": "SJDPzdgzQmuc"
+          },
+          "id": "SOHm5DGGfN",
+          "type": "code"
+        },
+        {
+          "data": {
+            "columnWidths": [ 150, 400, 150 ],
+            "content": {
+              "0": [ "Heading 1", "Heading 2", "heading" ],
+              "1": [ "1", "2", "4" ],
+              "2": [ "3", "4", "5" ],
+              "rowCount": 3
+            },
+            "stretched": false,
+            "uid": "ZNJhFgvymAMb",
+            "withHeadings": true
+          },
+          "id": "5rFoB25GKD",
+          "type": "table"
+        },
+        {
+          "data": {
+            "uid": "JIwamAhnKOrP",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2Frecord_TfqinpMdmFwt.webm?alt=media&token=73dadb97-7f57-448e-9bab-af6e2d3ef2c4"
+          },
+          "id": "tTRPi8We-z",
+          "type": "audionote"
+        },
+        {
+          "data": {
+            "uid": "AdAKzFlMZoFU",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2Frecord_FuCWOhPbKeYx.webm?alt=media&token=52e1a101-add8-41ef-a030-ceffb9f664ea"
+          },
+          "id": "2KRtmBzC43",
+          "type": "audionote"
+        },
+        {
+          "data": {
+            "caption": "<br>",
+            "height": "",
+            "stretched": false,
+            "uid": "WHacfNAmsTvc",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FScreenshot%25202023-01-03%2520at%252010_lnKpJdlVrPDe.png?alt=media&amp;token=63c81eff-7ec8-4740-8238-973b7193f56d",
+            "width": "",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "HHfiyj8Vuv",
+          "type": "image"
+        },
+        {
+          "data": { "text": "Here I am !.", "uid": "HoAHwKwticlL" },
+          "id": "zQ7Vut2gcW",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1673266300750,
+      "title": "Getting Started",
+      "uid": "ToZKDvNShYVC"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "ZUsaKLtTZzXC" },
+          "id": "xwdnltvIPw",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "fcUdCcbmWvsR" },
+          "id": "mEDLGi725y",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "TINTcdNTsGke" },
+          "id": "t3ID4DDx5N",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [ { "content": "This is a check list", "items": [] } ],
+            "startingIndex": 1,
+            "style": "ticked",
+            "uid": "AXgzORNPPLRI"
+          },
+          "id": "vwQht1p047",
+          "type": "list"
+        },
+        {
+          "data": { "text": "", "uid": "whPndYHyPMZJ" },
+          "id": "8mz3Pe_CtP",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "columnWidths": [ 150, 400 ],
+            "content": {
+              "0": [ "Heading 1", "Heading 2" ],
+              "1": [ "", "" ],
+              "2": [ "", "" ],
+              "rowCount": 3
+            },
+            "stretched": false,
+            "uid": "ZpuoEebmDAjO",
+            "withHeadings": true
+          },
+          "id": "3qsmWTPnYz",
+          "type": "table"
+        },
+        {
+          "data": { "text": "", "uid": "dhliTNtkLjQa" },
+          "id": "I8ZNS43C4o",
+          "type": "paragraph"
+        },
+        {
+          "data": { "level": 2, "text": "This is a header", "uid": "vKgQWyeMfsBs" },
+          "id": "Yi-lfyhvle",
+          "type": "header"
+        },
+        {
+          "data": {
+            "items": [
+              {
+                "content": "item 1",
+                "items": [
+                  {
+                    "content": "item 2",
+                    "items": [
+                      {
+                        "content": "item 3",
+                        "items": [
+                          {
+                            "content": "item 4",
+                            "items": [ { "content": "item ", "items": [] } ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "startingIndex": 1,
+            "style": "unordered",
+            "uid": "bYYawcuwHjHs"
+          },
+          "id": "SjWw-qIYut",
+          "type": "list"
+        },
+        {
+          "data": { "text": "", "uid": "ZthiOkQJIUbO" },
+          "id": "oVMmasdPlG",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "FGdwSbGRQZiP" },
+          "id": "7wAoZcryCI",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1673197192780,
+      "title": "Untitled",
+      "uid": "CCAfdiWMkGVf"
+    }
+  ],
+  "tags": [],
+  "title": "My Test Walthrough",
+  "uid": "VTJBmIrxipbw",
+  "updatedAt": 1673266308866,
+  "versionId": 139,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null,
+  "contributors": { "Gj71JR9azvTazNp6XfOaWVt3vVj1": 1673266307100 },
+  "banner": { "backgroundColor": "#0466c8", "imageUrl": "" }
+}
