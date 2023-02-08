@@ -1,0 +1,309 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1675857385942,
+  "description": "Something.",
+  "difficulty": null,
+  "sharing": { "domains": [], "mode": "Public", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Getting Started", "uid": "ooSgmQEAzoEf" },
+          "id": "71JB-qUFJu",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write introduction", "uid": "GgMuAvWzNpJf" },
+          "id": "1kS2DGAKs8",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "This is a walkthrough.", "uid": "KTPmOaBGUiEn" },
+          "id": "B-ApjzQxuD",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "bCEgCCVvvgAX" },
+          "id": "7uhRIR-3lp",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "DSXuYlaMLMHP" },
+          "id": "uzYN1if16Z",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "AuaWWQgZxzMB" },
+          "id": "8edX9X7BBG",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "cIoVnnRZaZQM" },
+          "id": "t-uFljnnGX",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "gvUrwDWnlmjO" },
+          "id": "Rjs10NjLCu",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "BrQZXbVDJGoZ" },
+          "id": "mVF20Edix4",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "vTjHpJgIMTXf" },
+          "id": "P5VfnNYUtR",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "LdeHioJAjAaD" },
+          "id": "a23CleRWGu",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "HVsxMGJKACxv" },
+          "id": "FKZ-2UHGwd",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "wsQaQzItMNJs" },
+          "id": "XszGOuBmEA",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "ZBtxLajQpdOF" },
+          "id": "3Se35eVWpY",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "wCQkOifzOHda" },
+          "id": "cL-MNU0KXo",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "HcrGAJUJWVcH" },
+          "id": "d3Q-pfr_Qo",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1675857447422,
+      "title": "Getting Started",
+      "uid": "GfRMafkjjizq"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Step 2", "uid": "FlZCUmhQxRdC" },
+          "id": "CuYJfpMHy6",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "SmPOZDQdFldf" },
+          "id": "7-VIBPnjuD",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "CVAyXgfjGIKo" },
+          "id": "AmekV-Jnf0",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "This is a walkthrough.", "uid": "TgQHLWJtpwmO" },
+          "id": "HAAdudiTRl",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "tyCycIfjRGwB" },
+          "id": "MhZ409Z7ve",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "fEfDdsGqTrsL" },
+          "id": "1Wfh-kOc7W",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "BRgLjFTJSgWc" },
+          "id": "LTv8tjT7p5",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "inEWvuGcpJIH" },
+          "id": "IdVF3ZxACu",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "wYopCTezuuoo" },
+          "id": "vHEa6KEvKc",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "bfhvPnbsMUxC" },
+          "id": "VTDmD4ZOSN",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "qOiOWayToXko" },
+          "id": "wNdKYGuT1V",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "mfgfqftXgwLH" },
+          "id": "CcwpzfaCJp",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "DbxqIyReRGRu" },
+          "id": "xnVNgGWm5e",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "WwbRlYTlsoFk" },
+          "id": "xfrRn4YysN",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "GHarjHdcamiq" },
+          "id": "hZPbdj4TaF",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "RxyAFeoTIGGp" },
+          "id": "-A7zJ0gk1h",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1675857489649,
+      "title": "Untitled",
+      "uid": "ixyxHapJndNn"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Step 3", "uid": "QjRxSrCnloIY" },
+          "id": "zsnJQtxZ0r",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "ZDuPtBlbtwtU" },
+          "id": "NqI2nMvM0n",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "PIoRUrjBXyyP" },
+          "id": "P6qPxzpBVx",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "This is some new content.", "uid": "EdbjZHdhqXzU" },
+          "id": "u3H0-ySV0t",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "DGWfpwTfRHZt" },
+          "id": "ZT_v-q3Qxr",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "This is my code component",
+                "language": "none",
+                "tabName": "Code"
+              }
+            ],
+            "uid": "WBCPKdaJWpMr"
+          },
+          "id": "FUjsQ10_km",
+          "type": "code"
+        },
+        {
+          "data": { "text": "", "uid": "hRZiSvomrvWq" },
+          "id": "mt10HQtXfV",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "EZxaZwbKSkTV" },
+          "id": "KZeSYxufbU",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "upMExFohxgXp" },
+          "id": "Hgnvse9qEW",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "jzUtAlziBGVy" },
+          "id": "J6tTjABlJo",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "fYPRGFHKBEPz" },
+          "id": "mcdeP8dfWh",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "qOsRpFJPJCPH" },
+          "id": "qJO8KRm9L7",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "OrOqAGquPywO" },
+          "id": "H4dodyT1lC",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "TrZCqKCWKnac" },
+          "id": "2xVcVUG7Mf",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "HnsJWMDRYcTO" },
+          "id": "f1quMQ38BV",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "vBooJOZZLDnj" },
+          "id": "f7EdJs5bWO",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "yvtbuzNzNvHm" },
+          "id": "G0smVzYpsV",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "khRDLXLbeZqE" },
+          "id": "N4WeWJUDwi",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "VowTXXGhVFiE" },
+          "id": "7Dno2fLhCY",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1675857512650,
+      "title": "Untitled",
+      "uid": "cWFPYTcoAfSQ"
+    }
+  ],
+  "tags": [ "terraform" ],
+  "title": "Demo Walkthrough",
+  "uid": "aCBeGqBJMJyK",
+  "updatedAt": 1675857542004,
+  "versionId": 12,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null,
+  "contributors": { "Gj71JR9azvTazNp6XfOaWVt3vVj1": 1675857540225 },
+  "banner": {
+    "backgroundColor": "#CDDAE1",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2Fblake-wisz-SK5jOjXxGRA-unsplash_OEwLwNeVrxbC.jpg?alt=media&token=bd746c9a-04a4-4d48-8fd8-602c56f9af5b"
+  }
+}
