@@ -1,0 +1,191 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1665637853693,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "domains": [], "mode": "Public", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Getting Started", "uid": "EVkiPTnpqEeI" },
+          "id": "BX-zeffUOi",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write introduction", "uid": "OkXSCXqVwUtp" },
+          "id": "bcB5sFvi0r",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "columnWidths": [ 326, 400 ],
+            "content": {
+              "0": [ "Heading 1", "Heading 2" ],
+              "1": [
+                "<div><a href=\"http://www.google.com\">Content</a> </div>",
+                ""
+              ],
+              "2": [ "dsadas", "" ],
+              "rowCount": 3
+            },
+            "stretched": false,
+            "uid": "uOpJxahYUPfN",
+            "withHeadings": true
+          },
+          "id": "KxV5VB2RZM",
+          "type": "table"
+        },
+        {
+          "data": { "text": "", "uid": "ywnaPgcrXFqB" },
+          "id": "ju7iYSi2Hy",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "qna": [
+              {
+                "answer": "The purpose of product documentation is to contribute toward building a strong, ongoing relationship with your customers by sharing relevant information about the product and therefore reducing churn.",
+                "question": "What is the purpose of product documentation?"
+              },
+              {
+                "answer": "Determine your documentation’s target audience then use information architecture to guide your users through your knowledge base by providing signposts and divide your knowledge base material into chunks for non-linear discovery. Also, Separate code documentation from product documentation and use a variety of content forms, such as images, videos, screencasts, audio, and interactive code examples. Use the appropriate software solution for hosting your knowledge base.",
+                "question": "How do you write a product documentation?"
+              },
+              {
+                "answer": "Types of SaaS product documentation are tutorials, how-to-guides, explanations &amp; reference?",
+                "question": "What are the different types of technical writing?"
+              }
+            ],
+            "subTitle": "Subtitle",
+            "title": "Frequently Asked Questions",
+            "uid": "zVcQrKyiPkTI"
+          },
+          "id": "cgMuL4uB9c",
+          "type": "faq"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "",
+            "stretched": false,
+            "uid": "LoTOBhEVorrV",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2Fimage_KxUBJfprwLxW.png?alt=media&amp;token=a60e12cc-d021-428e-8c88-743e103c2737",
+            "width": "",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "m0aL_qN1oQ",
+          "type": "image"
+        },
+        {
+          "data": { "text": "", "uid": "JeNPFNeuXaON" },
+          "id": "mD-RVX-Z7Q",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "mOfSXRqykpTk" },
+          "id": "t9A1x8328X",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "gzudxuewOjwJ" },
+          "id": "vAbmM_KbIv",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "cLmSIXArYiez" },
+          "id": "tI5eehAveY",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "QmQDExeCwhNv" },
+          "id": "lw7fALueap",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "LnkCptGomYIu" },
+          "id": "ATRQdMpi3Q",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "rETHDkVuPduf" },
+          "id": "GFcOsy2yUb",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "iJDrUtHGQUvA" },
+          "id": "9v4bQTm-e6",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "hVuPytYIORFj" },
+          "id": "zvcBZTqORe",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1675857742545,
+      "title": "Getting Started",
+      "uid": "BxSQTiJYCbiU"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Untitled" }, "type": "header" },
+        { "data": { "text": "Start writing..." }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" }
+      ],
+      "time": 1665638029097,
+      "title": "My new step",
+      "uid": "NGtdKayxjnWi"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Untitled" }, "type": "header" },
+        { "data": { "text": "Start writing..." }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" }
+      ],
+      "time": 1669310486680,
+      "title": "asdadsada",
+      "uid": "dsvjfZLXOVKL"
+    }
+  ],
+  "tags": [],
+  "title": "New walkthrough to create a new k8s cluster using terraform",
+  "uid": "NvfsMbPFQkeS",
+  "updatedAt": 1675857756729,
+  "versionId": 39,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null,
+  "contributors": { "Gj71JR9azvTazNp6XfOaWVt3vVj1": 1675857754946 },
+  "banner": {
+    "backgroundColor": "#FCD5CE",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FScreenshot%202022-12-16%20at%2015_fMoLJHhWhDyY.png?alt=media&token=1d894503-084f-4970-910b-e118b35da765",
+    "left": -55
+  }
+}
