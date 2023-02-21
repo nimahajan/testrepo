@@ -1,0 +1,316 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1652203354366,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "domains": [], "mode": "Public", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Getting Started", "uid": "JxQfQyUOQvaa" },
+          "id": "N-2MJAEsKL",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write introduction", "uid": "dKjllrhJaCDi" },
+          "id": "8V7ZlEoW1V",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "class ShoppingList extends React.Component {\n  render() {\n    return (\n      <div className=\"shopping-list\">\n        <h1>Shopping List for {this.props.name}</h1>\n        <ul>\n          <li>Instagram</li>\n          <li>WhatsApp</li>\n          <li>Oculus</li>\n        </ul>\n      </div>\n    );\n  }\n}",
+                "language": "none",
+                "tabName": "Code"
+              }
+            ],
+            "uid": "EBkVsXZyzzxk"
+          },
+          "id": "9bz_vDPzMr",
+          "type": "code"
+        },
+        {
+          "data": { "text": "", "uid": "AGCImqDEzlOQ" },
+          "id": "_32c20yTbf",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "400",
+            "service": "youtube",
+            "source": "https://www.youtube.com/watch?v=Rvey9g0VgY0"
+          },
+          "id": "pzEC_CtYYu",
+          "type": "embed"
+        },
+        {
+          "data": { "text": "", "uid": "phEkLrOEQWJr" },
+          "id": "d4vuGdYE2F",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1676976532084,
+      "title": "Getting Started",
+      "uid": "qugstomcMaLg"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "epuEwpVBRfVH" },
+          "id": "9vPcNZBHSV",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "EShwmidRJmzY" },
+          "id": "dBQzs-3CqX",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "Whereas recognition of the inherent dignityRegular 400",
+            "uid": "RTVxekAidTjI"
+          },
+          "id": "D4Nj-XvpGM",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "EarOQzPnmaew" },
+          "id": "j8KXXzz9cW",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "message": "Whereas recognition of the inherent dignityRegular 400",
+            "type": "primary",
+            "uid": "hkkPgcjaSSob"
+          },
+          "id": "vRl-10ImNW",
+          "type": "alert"
+        },
+        {
+          "data": { "text": "", "uid": "BechBTkAVfkF" },
+          "id": "q11Ga437sz",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "jWUGqoQYLHzy" },
+          "id": "rz4GraUkKb",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "",
+            "stretched": false,
+            "uid": "qXBieiKiCuaI",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FScreenshot_2022-05-06_at_9_AnrPjsWMRYrB.png?alt=media&amp;token=62c3d4c8-6915-4398-a706-8dc850a6b368",
+            "width": "",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "njrOT-S99Q",
+          "type": "image"
+        },
+        {
+          "data": {
+            "tabs": [
+              {
+                "code": "Whereas recognition of the inherent dignity\nThis is something awsesome",
+                "language": "none",
+                "tabName": "Code"
+              }
+            ],
+            "uid": "jVADqliwZEJj"
+          },
+          "id": "Qlqg5RT68X",
+          "type": "code"
+        }
+      ],
+      "time": 1676976611278,
+      "title": "Untitled",
+      "uid": "OibHsYhpSyhC"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 3, "text": "This is my Title", "uid": "XdXjEDeGiAft" },
+          "id": "IH83xXjYPF",
+          "type": "header"
+        },
+        {
+          "data": { "text": "This is some text.", "uid": "CXANVIPpUAOC" },
+          "id": "6QrAFSClea",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "columnWidths": [ 150, 400 ],
+            "content": {
+              "0": [ "Heading 1", "Heading 2" ],
+              "1": [ "Item", "" ],
+              "2": [ "", "" ],
+              "rowCount": 3
+            },
+            "stretched": false,
+            "uid": "ThDyudkhJXIt",
+            "withHeadings": true
+          },
+          "id": "PVFYJAgVqX",
+          "type": "table"
+        },
+        {
+          "data": { "text": "", "uid": "hqGttseFiyEa" },
+          "id": "C4BdqU28H0",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "IRnFVyLMJIBQ" },
+          "id": "rRxMFOhSxW",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "xQvNjztjJnOn" },
+          "id": "VBWnN2Gozc",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "NZvisbKzxlav" },
+          "id": "oE76J6ART9",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "xUcdTBiicjBC" },
+          "id": "c3sKGAVXso",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "LvFwsQLWXTyv" },
+          "id": "yGmdJae0Gd",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "RgHobqMognvQ" },
+          "id": "f6D2M8kd_P",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "gvbEBudgCECH" },
+          "id": "7djNLWjPwA",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1676977683601,
+      "title": "Untitled",
+      "uid": "bcToFKUebaPF"
+    },
+    {
+      "blocks": [
+        { "data": { "level": 2, "text": "Untitled" }, "type": "header" },
+        { "data": { "text": "Start writing..." }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" },
+        { "data": { "text": "" }, "type": "paragraph" }
+      ],
+      "time": 1653270041316,
+      "title": "Untitled",
+      "uid": "uoQvVZUthwiK"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Untitled", "uid": "HRCmQbhMZIve" },
+          "id": "D7_I_lPInf",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "orBoIGwkqtGc" },
+          "id": "w8acSBmHp1",
+          "type": "paragraph"
+        },
+        {
+          "data": { "uid": "coicHMLfbHtU", "value": "" },
+          "id": "Z11czrL-Iz",
+          "type": "embedTools"
+        },
+        {
+          "data": { "text": "", "uid": "PkjlfCGLmBys" },
+          "id": "ZmtMjm5xYb",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "sSVqIghfPykf" },
+          "id": "Qk5hGCl2vW",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "wcJdEUdHvCNb" },
+          "id": "tG10G5YCpU",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "xZtMhQJwjccf" },
+          "id": "_Hc2_xq_zZ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "qkZsOWgeYKSy" },
+          "id": "luePXsaXB3",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "cohBsXiYevcK" },
+          "id": "QZR3PZ-iJt",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "hnUXxCOLmrWh" },
+          "id": "NpYn9aU70V",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "FFBZeZEIUtMX" },
+          "id": "TOmgVkBgA3",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "AvUTzkvRaTnc" },
+          "id": "HV7UsYFNUH",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "UfJgGGzMnDgY" },
+          "id": "6EkIxlIsv7",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1661444518912,
+      "title": "Untitled",
+      "uid": "gByBbYCZEgzZ"
+    }
+  ],
+  "tags": [],
+  "title": "How to setup AWS CLI access?",
+  "uid": "NjkQqpXpqhmw",
+  "updatedAt": 1676978196897,
+  "versionId": 114,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null,
+  "contributors": { "Gj71JR9azvTazNp6XfOaWVt3vVj1": 1676978194640 },
+  "banner": { "backgroundColor": "#2b9348", "imageUrl": "" }
+}
