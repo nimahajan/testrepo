@@ -1,0 +1,211 @@
+{
+  "authorUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "createdAt": 1676974753564,
+  "description": "",
+  "difficulty": null,
+  "sharing": { "domains": [], "mode": "Public", "users": [] },
+  "status": "Published",
+  "prerenderedHtmlUrl": null,
+  "steps": [
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Getting Started", "uid": "XtIxJqsMVgfM" },
+          "id": "qkrQbCCmFY",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Write introduction", "uid": "UkzNuPnLjyoL" },
+          "id": "CLYsZy7D_l",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "This is new change.", "uid": "DRRiLQfFsjqw" },
+          "id": "V9cMv9me31",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "GFbEjRtUagKo" },
+          "id": "lOkksQ8YPB",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "ehdknkDisZtI" },
+          "id": "ixF5-anRsJ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "zVZuCSmQhXDb" },
+          "id": "Ni44i2TzHO",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "mXIdoYvHynhB" },
+          "id": "OdG6gd2EEv",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "VqTIWHMDcwNy" },
+          "id": "9kVgfg1qm9",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "jqyolurZtkKN" },
+          "id": "qmNCBasBkp",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "UKtwOmzuJiKx" },
+          "id": "1-oRkuSh8t",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "nQDyzcZCjFAD" },
+          "id": "HTp6-Tk2ZB",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "VyZprbKsgIem" },
+          "id": "8caHn8osRA",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "bdqgLYBPYusm" },
+          "id": "kfnveRO3d3",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "IsvMzRJRRywx" },
+          "id": "f-hdBbi1h4",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1676976091184,
+      "title": "Getting Started",
+      "uid": "CfuAqXBCeLQK"
+    },
+    {
+      "blocks": [
+        {
+          "data": { "level": 2, "text": "Step 2", "uid": "NxxaGOIFoGQg" },
+          "id": "zs2sR6ycsU",
+          "type": "header"
+        },
+        {
+          "data": { "text": "Start writing...", "uid": "MIJOVkWFIiuo" },
+          "id": "UbZAAF95eV",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "PHvvxmcskwhT" },
+          "id": "kgiT704Pq7",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "text": "This is a new change. Hopefully this works !!",
+            "uid": "FHUfavBFOsSe"
+          },
+          "id": "JL_YUs5zQa",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "QCIjOHgfVBFH" },
+          "id": "-CAqVwPF6A",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "items": [
+              { "content": "Item 2", "items": [] },
+              { "content": "Item 4", "items": [] }
+            ],
+            "startingIndex": 1,
+            "style": "ordered",
+            "uid": "FGjHVWWtIfTB"
+          },
+          "id": "cilcLwrCNr",
+          "type": "list"
+        },
+        {
+          "data": { "text": "", "uid": "ZFiOjpjclKkJ" },
+          "id": "t6GhiFX0zO",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "qTeVljpgGxtH" },
+          "id": "bcYdt14LET",
+          "type": "paragraph"
+        },
+        {
+          "data": {
+            "caption": "",
+            "height": "",
+            "stretched": false,
+            "uid": "AQuIYEtyOKMc",
+            "url": "https://firebasestorage.googleapis.com/v0/b/kodelab-5238e.appspot.com/o/private%2Fuser%2FGj71JR9azvTazNp6XfOaWVt3vVj1%2FScreenshot_2023-02-19_at_10_PrnFJWlEWBss.png?alt=media&amp;token=3c332423-9a3e-40cd-8a46-d86c04f4b6cf",
+            "width": "",
+            "withBackground": false,
+            "withBorder": false,
+            "withShadow": false
+          },
+          "id": "nJnCw4JEpK",
+          "type": "image"
+        },
+        {
+          "data": { "text": "", "uid": "CuJAoreBQEXQ" },
+          "id": "GqLx7lXOZx",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "MDOtadvIxaqe" },
+          "id": "gCaEYnArfi",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "mXiKwYQVVuKT" },
+          "id": "OFHnEq9TvJ",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "IZfYYErrFcpJ" },
+          "id": "L5X0WJLYzM",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "KNSnZKKKamIO" },
+          "id": "Zo4FaUEPDA",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "kKJQGThAQFPw" },
+          "id": "c7xbWbGAA2",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "hZVpjTbmNCKp" },
+          "id": "IEcyDEzJIe",
+          "type": "paragraph"
+        },
+        {
+          "data": { "text": "", "uid": "jndyWfAcycNd" },
+          "id": "TZA1nVIMs8",
+          "type": "paragraph"
+        }
+      ],
+      "time": 1676976453842,
+      "title": "Untitled",
+      "uid": "nCzfVGaqnoMB"
+    }
+  ],
+  "tags": [],
+  "title": "Test Walkthrough",
+  "uid": "UwMNiDjFdjDf",
+  "updatedAt": 1676976471474,
+  "versionId": 14,
+  "createdBy": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "workspaceUid": "Gj71JR9azvTazNp6XfOaWVt3vVj1",
+  "backupSha": null,
+  "contributors": { "Gj71JR9azvTazNp6XfOaWVt3vVj1": 1676976468042 },
+  "banner": { "backgroundColor": "", "imageUrl": "" }
+}
